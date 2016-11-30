@@ -115,6 +115,7 @@ class MonoPackageManager_Resources {
 		"Xamarin.Forms.Xaml.dll",
 		"System.Runtime.dll",
 		"System.Resources.ResourceManager.dll",
+		"System.Diagnostics.Tools.dll",
 		"System.Collections.dll",
 		"System.Diagnostics.Debug.dll",
 		"System.Threading.Tasks.dll",

@@ -23,6 +23,7 @@ C:\Users\samuel.rule\Documents\EquationsApp\EquationApp\EquationApp\EquationApp.
 C:\Users\samuel.rule\Documents\EquationsApp\EquationApp\EquationApp\EquationApp.Droid\obj\Debug\android\assets\System.Runtime.dll
 C:\Users\samuel.rule\Documents\EquationsApp\EquationApp\EquationApp\EquationApp.Droid\obj\Debug\android\assets\System.ComponentModel.Composition.dll
 C:\Users\samuel.rule\Documents\EquationsApp\EquationApp\EquationApp\EquationApp.Droid\obj\Debug\android\assets\System.Resources.ResourceManager.dll
+C:\Users\samuel.rule\Documents\EquationsApp\EquationApp\EquationApp\EquationApp.Droid\obj\Debug\android\assets\System.Diagnostics.Tools.dll
 C:\Users\samuel.rule\Documents\EquationsApp\EquationApp\EquationApp\EquationApp.Droid\obj\Debug\android\assets\System.Collections.dll
 C:\Users\samuel.rule\Documents\EquationsApp\EquationApp\EquationApp\EquationApp.Droid\obj\Debug\android\assets\System.Diagnostics.Debug.dll
 C:\Users\samuel.rule\Documents\EquationsApp\EquationApp\EquationApp\EquationApp.Droid\obj\Debug\android\assets\System.Threading.Tasks.dll
