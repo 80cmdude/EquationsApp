@@ -20,17 +20,29 @@ namespace EquationApp.Views.Equations
 
         void CalculateVelocity(object sender, EventArgs e)
         {
-
-            Validation isValid = VelocityEquation.validateUserNumberInput(distanceEntry.Text, timeEntry.Text);
-            if (isValid.isValid == true)
+            try
             {
                 string velocity = VelocityEquation.GetVelocity(distanceEntry.Text, timeEntry.Text);
                 velocityResult.Text = velocity;
             }
-            else
+            catch (DivideByZeroException j)
             {
-                Alerts.InvalidInput(messageToUser: isValid.errorMessage);
+                Alerts.InvalidInput(messageToUser: "Cannot divide by zero");
             }
+            catch (Exception j)
+            {
+                Alerts.InvalidInput(messageToUser: "Something went wrong");
+            }
+            //Validation isValid = VelocityEquation.validateUserNumberInput(distanceEntry.Text, timeEntry.Text);
+            //if (isValid.isValid == true)
+            //{
+            //    string velocity = VelocityEquation.GetVelocity(distanceEntry.Text, timeEntry.Text);
+            //    velocityResult.Text = velocity;
+            //}
+            //else
+            //{
+            //    Alerts.InvalidInput(messageToUser: isValid.errorMessage);
+            //}
         }
     }
 }
