@@ -1,5 +1,4 @@
 ﻿using System;
-using EquationApp.Models;
 
 namespace EquationApp.Controllers.Equations
 {
@@ -12,7 +11,7 @@ namespace EquationApp.Controllers.Equations
 
             decimal velocity = distance / time;
 
-            return velocity.ToString();
+            return Math.Round(velocity,3).ToString();
         }
     }
 }

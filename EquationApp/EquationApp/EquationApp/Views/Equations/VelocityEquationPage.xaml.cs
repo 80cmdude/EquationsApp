@@ -4,7 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using EquationApp.Controllers.Equations;
-using EquationApp.Models;
 using EquationApp;
 
 using Xamarin.Forms;
@@ -31,18 +30,8 @@ namespace EquationApp.Views.Equations
             }
             catch (Exception j)
             {
-                Alerts.InvalidInput(messageToUser: "Something went wrong");
+                Alerts.InvalidInput(messageToUser: j.Message);
             }
-            //Validation isValid = VelocityEquation.validateUserNumberInput(distanceEntry.Text, timeEntry.Text);
-            //if (isValid.isValid == true)
-            //{
-            //    string velocity = VelocityEquation.GetVelocity(distanceEntry.Text, timeEntry.Text);
-            //    velocityResult.Text = velocity;
-            //}
-            //else
-            //{
-            //    Alerts.InvalidInput(messageToUser: isValid.errorMessage);
-            //}
         }
     }
 }
