@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EquationApp.Views.Equations.VelocityEquationPage">
+  <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Orientation="Vertical" Spacing="15">
+    <Label Text="{Binding MainText}" VerticalOptions="Center" HorizontalOptions="Center" />
+    <Entry x:Name="distanceEntry" HorizontalOptions="FillAndExpand" Placeholder="Distance" Keyboard="Numeric" />
+    <Entry x:Name="timeEntry" HorizontalOptions="FillAndExpand" Placeholder="Time" Keyboard="Numeric" />
+    <Label x:Name="velocityResult" HorizontalOptions="FillAndExpand"/>
+    <Button x:Name="calculateVelocity" Text="Calculate!" Clicked="CalculateVelocity" />
+  </StackLayout>
+</ContentPage>
