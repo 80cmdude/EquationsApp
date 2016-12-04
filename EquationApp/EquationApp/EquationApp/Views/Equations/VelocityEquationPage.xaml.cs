@@ -15,23 +15,85 @@ namespace EquationApp.Views.Equations
         public VelocityEquationPage()
         {
             InitializeComponent();
+            timeEntry.IsVisible = false;
+            distanceEntry.IsVisible = false;
+            velocityEntry.IsVisible = false;
+
+            calculateTo.SelectedIndexChanged += (sender, args) => { SetInputFields(); };
         }
 
-        void CalculateVelocity(object sender, EventArgs e)
+        void SetInputFields()
         {
-            try
+            timeEntry.IsVisible = false;
+            distanceEntry.IsVisible = false;
+            velocityEntry.IsVisible = false;
+            if (calculateTo.SelectedIndex == 0)
             {
-                string velocity = VelocityEquation.GetVelocity(distanceEntry.Text, timeEntry.Text);
-                velocityResult.Text = velocity;
+                velocityEntry.IsVisible = true;
+                timeEntry.IsVisible = true;
             }
-            catch (DivideByZeroException j)
+            else if (calculateTo.SelectedIndex == 1)
             {
-                Alerts.InvalidInput(messageToUser: "Cannot divide by zero");
+                velocityEntry.IsVisible = true;
+                distanceEntry.IsVisible = true;
             }
-            catch (Exception j)
+            else
             {
-                Alerts.InvalidInput(messageToUser: j.Message);
+                distanceEntry.IsVisible = true;
+                timeEntry.IsVisible = true;
             }
+        }
+
+        void Calculate(object sender, EventArgs e)
+        {
+            if (calculateTo.SelectedIndex == 0)
+            {
+                try
+                {
+                    string distance = VelocityEquation.GetDistance(velocityEntry.Text, timeEntry.Text);
+                    Result.Text = distance;
+                }
+                catch (DivideByZeroException j)
+                {
+                    Alerts.InvalidInput(messageToUser: "Cannot divide by zero");
+                }
+                catch (Exception j)
+                {
+                    Alerts.InvalidInput(messageToUser: j.Message);
+                }
+            }
+            else if (calculateTo.SelectedIndex == 1)
+            {
+                try
+                {
+                    string time = VelocityEquation.GetTime(velocityEntry.Text, distanceEntry.Text);
+                    Result.Text = time;
+                }
+                catch (DivideByZeroException j)
+                {
+                    Alerts.InvalidInput(messageToUser: "Cannot divide by zero");
+                }
+                catch (Exception j)
+                {
+                    Alerts.InvalidInput(messageToUser: j.Message);
+                }
+            }
+            else
+            {
+                try
+                {
+                    string velocity = VelocityEquation.GetVelocity(distanceEntry.Text, timeEntry.Text);
+                    Result.Text = velocity;
+                }
+                catch (DivideByZeroException j)
+                {
+                    Alerts.InvalidInput(messageToUser: "Cannot divide by zero");
+                }
+                catch (Exception j)
+                {
+                    Alerts.InvalidInput(messageToUser: j.Message);
+                }
+            } 
         }
     }
 }
