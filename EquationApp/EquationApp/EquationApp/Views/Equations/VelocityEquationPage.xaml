@@ -12,10 +12,9 @@
         <x:String>Velocity</x:String>
       </Picker.Items>
     </Picker>
-    <me:NegativeEntry Text="Test" />
-    <Entry x:Name="distanceEntry" HorizontalOptions="FillAndExpand" Placeholder="Distance" Keyboard="Numeric" />
-    <Entry x:Name="timeEntry" HorizontalOptions="FillAndExpand" Placeholder="Time" Keyboard="Numeric" />
-    <Entry x:Name="velocityEntry" HorizontalOptions="FillAndExpand" Placeholder="Velocity" Keyboard="Numeric" />
+    <me:NegativeEntry x:Name="distanceEntry" HorizontalOptions="FillAndExpand" Placeholder="Distance" Keyboard="Numeric" />
+    <me:NegativeEntry x:Name="timeEntry" HorizontalOptions="FillAndExpand" Placeholder="Time" Keyboard="Numeric" />
+    <me:NegativeEntry x:Name="velocityEntry" HorizontalOptions="FillAndExpand" Placeholder="Velocity" Keyboard="Numeric" />
     <Button x:Name="calculate" Text="Calculate!" Clicked="Calculate" />
     <Label x:Name="Result" HorizontalOptions="FillAndExpand"/>
   </StackLayout>

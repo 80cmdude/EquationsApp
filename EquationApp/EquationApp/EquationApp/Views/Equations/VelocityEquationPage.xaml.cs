@@ -19,7 +19,14 @@ namespace EquationApp.Views.Equations
             distanceEntry.IsVisible = false;
             velocityEntry.IsVisible = false;
 
-            calculateTo.SelectedIndexChanged += (sender, args) => { SetInputFields(); };
+            calculateTo.SelectedIndexChanged += (sender, args) => 
+            {
+                SetInputFields();
+                Result.Text = "";
+                timeEntry.Text = "";
+                velocityEntry.Text = "";
+                distanceEntry.Text = "";
+            };
         }
 
         void SetInputFields()
