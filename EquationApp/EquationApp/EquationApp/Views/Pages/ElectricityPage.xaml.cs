@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using EquationApp.Views.Equations;
 
 using Xamarin.Forms;
 
@@ -13,6 +14,11 @@ namespace EquationApp.Views.Pages
         public ElectricityPage()
         {
             InitializeComponent();
+        }
+
+        async void NavigatePageRVI(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Resistance_RVI_Page());
         }
     }
 }

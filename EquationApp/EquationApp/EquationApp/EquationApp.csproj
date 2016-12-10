@@ -45,8 +45,11 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Views\Equations\VelocityEquationPage.xaml.cs">
-      <DependentUpon>VelocityEquationPage.xaml</DependentUpon>
+    <Compile Include="Views\Equations\Resistance_RVI_Page.xaml.cs">
+      <DependentUpon>Resistance_RVI_Page.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Equations\Velocity_VDT_Page.xaml.cs">
+      <DependentUpon>Velocity_VDT_Page.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Pages\ElectricityPage.xaml.cs">
       <DependentUpon>ElectricityPage.xaml</DependentUpon>
@@ -85,7 +88,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Views\Equations\VelocityEquationPage.xaml">
+    <EmbeddedResource Include="Views\Equations\Velocity_VDT_Page.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -101,6 +104,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\Pages\MechanicsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\Equations\Resistance_RVI_Page.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
