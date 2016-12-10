@@ -53,64 +53,42 @@ namespace EquationApp.Views.Equations
 
         void Calculate(object sender, EventArgs e)
         {
-            if (calculateTo.SelectedIndex == -1)
+            try
             {
-                Alerts.InvalidInput(messageToUser: "Please select a value to calculate");
-            }
-            else
-            {
-                if (calculateTo.SelectedIndex == 0)
+                if (calculateTo.SelectedIndex == -1)
                 {
-                    try
+                    Alerts.InvalidInput(messageToUser: "Please select a value to calculate");
+                }
+                else
+                {
+                    if (calculateTo.SelectedIndex == 0)
                     {
                         string distance = VelocityEquation.GetDistance(velocityEntry.Text, timeEntry.Text);
                         Result.Text = distance;
                     }
-                    catch (FormatException j)
-                    {
-                        Alerts.InvalidInput(messageToUser: $"Must enter a value into the fields");
-                    }
-                    catch (Exception j)
-                    {
-                        Alerts.InvalidInput(messageToUser: j.Message);
-                    }
-                }
-                else if (calculateTo.SelectedIndex == 1)
-                {
-                    try
+                    else if (calculateTo.SelectedIndex == 1)
                     {
                         string time = VelocityEquation.GetTime(velocityEntry.Text, distanceEntry.Text);
                         Result.Text = time;
                     }
-                    catch (FormatException j)
-                    {
-                        Alerts.InvalidInput(messageToUser: $"Must enter a value into the fields");
-                    }
-                    catch (Exception j)
-                    {
-                        Alerts.InvalidInput(messageToUser: j.Message);
-                    }
-                }
-                else
-                {
-                    try
+                    else
                     {
                         string velocity = VelocityEquation.GetVelocity(distanceEntry.Text, timeEntry.Text);
                         Result.Text = velocity;
                     }
-                    catch (FormatException j)
-                    {
-                        Alerts.InvalidInput(messageToUser: $"Must enter a value into the fields");
-                    }
-                    catch (DivideByZeroException j)
-                    {
-                        Alerts.InvalidInput(messageToUser: "Cannot divide by zero");
-                    }
-                    catch (Exception j)
-                    {
-                        Alerts.InvalidInput(messageToUser: j.Message);
-                    }
                 }
+            }
+            catch (FormatException j)
+            {
+                Alerts.InvalidInput(messageToUser: $"Must enter a valid number into the fields");
+            }
+            catch (DivideByZeroException j)
+            {
+                Alerts.InvalidInput(messageToUser: "Cannot divide by 0");
+            }
+            catch (Exception j)
+            {
+                Alerts.InvalidInput(messageToUser: j.Message);
             }
         }
     }

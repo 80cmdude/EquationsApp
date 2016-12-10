@@ -31,7 +31,7 @@ namespace EquationApp.Controllers.Equations
 
             decimal time = distance / velocity;
 
-            return $"{Math.Round(time, 3).ToString()} s";
+            return $"{Math.Abs(Math.Round(time, 3)).ToString()} s";
         }
     }
 }
