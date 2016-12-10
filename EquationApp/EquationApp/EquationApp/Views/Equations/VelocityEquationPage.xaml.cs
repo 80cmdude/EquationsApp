@@ -15,9 +15,9 @@ namespace EquationApp.Views.Equations
         public VelocityEquationPage()
         {
             InitializeComponent();
-            timeEntry.IsVisible = false;
-            distanceEntry.IsVisible = false;
-            velocityEntry.IsVisible = false;
+            velocityUI.IsVisible = false;
+            distanceUI.IsVisible = false;
+            timeUI.IsVisible = false;
 
             calculateTo.SelectedIndexChanged += (sender, args) => 
             {
@@ -31,23 +31,23 @@ namespace EquationApp.Views.Equations
 
         void SetInputFields()
         {
-            timeEntry.IsVisible = false;
-            distanceEntry.IsVisible = false;
-            velocityEntry.IsVisible = false;
+            velocityUI.IsVisible = false;
+            distanceUI.IsVisible = false;
+            timeUI.IsVisible = false;
             if (calculateTo.SelectedIndex == 0)
             {
-                velocityEntry.IsVisible = true;
-                timeEntry.IsVisible = true;
+                velocityUI.IsVisible = true;
+                timeUI.IsVisible = true;
             }
             else if (calculateTo.SelectedIndex == 1)
             {
-                velocityEntry.IsVisible = true;
-                distanceEntry.IsVisible = true;
+                velocityUI.IsVisible = true;
+                distanceUI.IsVisible = true;
             }
             else
             {
-                distanceEntry.IsVisible = true;
-                timeEntry.IsVisible = true;
+                distanceUI.IsVisible = true;
+                timeUI.IsVisible = true;
             }
         }
 

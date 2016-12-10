@@ -11,7 +11,7 @@ namespace EquationApp.Controllers.Equations
 
             decimal velocity = distance / time;
 
-            return Math.Round(velocity,3).ToString();
+            return $"{Math.Round(velocity,3).ToString()} m/s";
         }
 
         public static string GetDistance(string userVelocity, string userTime)
@@ -21,7 +21,7 @@ namespace EquationApp.Controllers.Equations
 
             decimal distance = velocity * time;
 
-            return Math.Round(distance, 3).ToString();
+            return $"{Math.Round(distance, 3).ToString()} m";
         }
 
         public static string GetTime(string userVelocity, string userDistance)
@@ -31,7 +31,7 @@ namespace EquationApp.Controllers.Equations
 
             decimal time = distance / velocity;
 
-            return Math.Round(time, 3).ToString();
+            return $"{Math.Round(time, 3).ToString()} s";
         }
     }
 }

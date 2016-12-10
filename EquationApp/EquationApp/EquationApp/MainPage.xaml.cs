@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using EquationApp.Views.Equations;
+using EquationApp.Views.Pages;
 
 using Xamarin.Forms;
 
@@ -15,10 +16,15 @@ namespace EquationApp
         {
             InitializeComponent();
         }
-
-        async void NavigatePageVelocity(object sender, EventArgs e)
+        
+        async void NavigatePageElectricity(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new VelocityEquationPage());
+            await Navigation.PushAsync(new ElectricityPage());
+        }
+
+        async void NavigatePageMechanics(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new MechanicsPage());
         }
     }
 }
