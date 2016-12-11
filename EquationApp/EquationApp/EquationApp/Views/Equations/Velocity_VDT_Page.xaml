@@ -3,28 +3,33 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:me="clr-namespace:EquationApp;assembly=EquationApp"
              x:Class="EquationApp.Views.Equations.VelocityEquationPage">
-  <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Orientation="Vertical" Spacing="15" Padding="20,20,20,20">
-    <Label Text="I want to Calculate:" Style="{StaticResource pageStart}" />
-    <Picker x:Name="calculateTo" Title="Calculate for" HorizontalOptions="FillAndExpand">
-      <Picker.Items>
-        <x:String>Distance</x:String>
-        <x:String>Time</x:String>
-        <x:String>Velocity</x:String>
-      </Picker.Items>
-    </Picker>
-    <StackLayout x:Name="distanceUI" Orientation="Horizontal">
-      <Label x:Name="distanceLabel" Text="Distance:" WidthRequest="100" VerticalOptions="Center" />
-      <me:NegativeEntry x:Name="distanceEntry" HorizontalOptions="FillAndExpand"  Keyboard="Numeric" VerticalOptions="Center" Placeholder="m" />
+  <StackLayout  VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Orientation="Vertical" Spacing="15" Padding="20,20,20,20">
+    <StackLayout x:Name="quickMode">
+      <Label Text="I want to Calculate:" Style="{StaticResource pageStart}" />
+      <Picker x:Name="calculateTo" Title="Calculate for" HorizontalOptions="FillAndExpand">
+        <Picker.Items>
+          <x:String>Distance</x:String>
+          <x:String>Time</x:String>
+          <x:String>Velocity</x:String>
+        </Picker.Items>
+      </Picker>
+      <StackLayout x:Name="distanceUI" Orientation="Horizontal">
+        <Label x:Name="distanceLabel" Text="Distance:" WidthRequest="100" VerticalOptions="Center" />
+        <me:NegativeEntry x:Name="distanceEntry" HorizontalOptions="FillAndExpand"  Keyboard="Numeric" VerticalOptions="Center" Placeholder="m" />
+      </StackLayout>
+      <StackLayout x:Name="timeUI" Orientation="Horizontal">
+        <Label x:Name="timeLabel" Text="Time:" WidthRequest="100" VerticalOptions="Center" />
+        <me:NegativeEntry x:Name="timeEntry" HorizontalOptions="FillAndExpand"  Keyboard="Numeric" VerticalOptions="Center" Placeholder="s" />
+      </StackLayout>
+      <StackLayout x:Name="velocityUI" Orientation="Horizontal">
+        <Label x:Name="velocityLabel" Text="Velocity:" WidthRequest="100" VerticalOptions="Center" />
+        <me:NegativeEntry x:Name="velocityEntry" HorizontalOptions="FillAndExpand"  Keyboard="Numeric" VerticalOptions="Center" Placeholder="m/s" />
+      </StackLayout>
+      <Button x:Name="calculate" Text="Calculate!" Clicked="Calculate" Style="{StaticResource primaryNavButton}" />
+      <Label x:Name="Result" HorizontalOptions="FillAndExpand" Style="{StaticResource result}" />
     </StackLayout>
-    <StackLayout x:Name="timeUI" Orientation="Horizontal">
-      <Label x:Name="timeLabel" Text="Time:" WidthRequest="100" VerticalOptions="Center" />
-      <me:NegativeEntry x:Name="timeEntry" HorizontalOptions="FillAndExpand"  Keyboard="Numeric" VerticalOptions="Center" Placeholder="s" />
+    <StackLayout VerticalOptions="End">
+      <Button x:Name="modeChangerButton" Text="Change Mode" Clicked="ChangeMode" Style="{StaticResource primaryNavButton}" />
     </StackLayout>
-    <StackLayout x:Name="velocityUI" Orientation="Horizontal">
-      <Label x:Name="velocityLabel" Text="Velocity:" WidthRequest="100" VerticalOptions="Center" />
-      <me:NegativeEntry x:Name="velocityEntry" HorizontalOptions="FillAndExpand"  Keyboard="Numeric" VerticalOptions="Center" Placeholder="m/s" />
-    </StackLayout>
-    <Button x:Name="calculate" Text="Calculate!" Clicked="Calculate" />
-    <Label x:Name="Result" HorizontalOptions="FillAndExpand" Style="{StaticResource result}" />
   </StackLayout>
 </ContentPage>

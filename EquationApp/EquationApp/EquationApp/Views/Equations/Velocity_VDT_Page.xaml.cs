@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using EquationApp.Controllers.Equations;
 using EquationApp;
+using EquationApp.Controllers;
 
 using Xamarin.Forms;
 
@@ -27,6 +28,21 @@ namespace EquationApp.Views.Equations
                 velocityEntry.Text = "";
                 distanceEntry.Text = "";
             };
+        }
+        
+        void ChangeMode(object sender,EventArgs e)
+        {
+            ModeChange.ChangeMode();
+            if (GlobalVar.quickMode == true)
+            {
+                quickMode.IsVisible = true;
+                this.Title = "Quick Mode";
+            }
+            else
+            {
+                quickMode.IsVisible = false;
+                this.Title = "Learner Mode";
+            }
         }
 
         void SetInputFields()

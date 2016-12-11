@@ -40,7 +40,10 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="Controllers\Equations\VelocityEquation.cs" />
+    <Compile Include="Controllers\ModeChange.cs" />
     <Compile Include="Controls\NegativeEntry.cs" />
+    <Compile Include="Controls\UnderlineEffect.cs" />
+    <Compile Include="GlobalVar.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
