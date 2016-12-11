@@ -7,11 +7,8 @@
   <ContentPage.Content>
     <ScrollView>
       <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Orientation="Vertical" Spacing="15" Padding="20,20,20,20">
-        <Label Text="Equations" VerticalOptions="Center" HorizontalOptions="Center" Style="{StaticResource primaryPageTitle}">
-          <Label.Effects>
-            <me:UnderlineEffect />
-          </Label.Effects>
-        </Label>
+        <Label Text="Equations" VerticalOptions="Center" HorizontalOptions="Center" Style="{StaticResource primaryPageTitle}" />
+          <Label Text="Choose a subject to browse" VerticalOptions="Center" HorizontalOptions="Center" Style="{StaticResource equationExplanation}" />
         <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Orientation="Vertical" Spacing="5">
           <Button Text="Mechanics" Clicked="NavigatePageMechanics" Style="{StaticResource primaryNavButton}" />
           <Button Text="Electricity" Clicked="NavigatePageElectricity" Style="{StaticResource primaryNavButton}" />

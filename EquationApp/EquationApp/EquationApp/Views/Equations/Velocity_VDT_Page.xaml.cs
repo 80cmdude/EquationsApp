@@ -15,6 +15,7 @@ namespace EquationApp.Views.Equations
     {
         public VelocityEquationPage()
         {
+            this.Title = "Paguco";
             InitializeComponent();
             velocityUI.IsVisible = false;
             distanceUI.IsVisible = false;
@@ -33,15 +34,15 @@ namespace EquationApp.Views.Equations
         void ChangeMode(object sender,EventArgs e)
         {
             ModeChange.ChangeMode();
-            if (GlobalVar.quickMode == true)
+            if (GlobalVar.showHow == true)
             {
-                quickMode.IsVisible = true;
-                this.Title = "Quick Mode";
+                learnerMode.IsVisible = false;
+                modeChangerButton.Text = "Show me how";
             }
             else
             {
-                quickMode.IsVisible = false;
-                this.Title = "Learner Mode";
+                learnerMode.IsVisible = true;
+                modeChangerButton.Text = "Hide how";
             }
         }
 
@@ -54,16 +55,19 @@ namespace EquationApp.Views.Equations
             {
                 velocityUI.IsVisible = true;
                 timeUI.IsVisible = true;
+                showHow.Text = "The distance travelled of and object is equal to the velocity of the object times the time it takes. \r\n d = v * t";
             }
             else if (calculateTo.SelectedIndex == 1)
             {
                 velocityUI.IsVisible = true;
                 distanceUI.IsVisible = true;
+                showHow.Text = "The time taken for an object to travel a distance is equal to the distance travelled divide by the velocity. \r\n t = d / v";
             }
             else
             {
                 distanceUI.IsVisible = true;
                 timeUI.IsVisible = true;
+                showHow.Text = "The Velocity of and object is equal to the distance travelled divided by the time taken. \r\n v = d / t";
             }
         }
 
@@ -81,16 +85,19 @@ namespace EquationApp.Views.Equations
                     {
                         string distance = VelocityEquation.GetDistance(velocityEntry.Text, timeEntry.Text);
                         Result.Text = distance;
+                        showHow.Text = $"The distance travelled of and object is equal to the velocity of the object times the time it takes. \r\n {Result.Text} = {velocityEntry.Text} * {timeEntry.Text}";
                     }
                     else if (calculateTo.SelectedIndex == 1)
                     {
                         string time = VelocityEquation.GetTime(velocityEntry.Text, distanceEntry.Text);
                         Result.Text = time;
+                        showHow.Text = $"The time taken for an object to travel a distance is equal to the distance travelled divide by the velocity. \r\n {Result.Text} = {distanceEntry.Text} / {velocityEntry.Text}";
                     }
                     else
                     {
                         string velocity = VelocityEquation.GetVelocity(distanceEntry.Text, timeEntry.Text);
                         Result.Text = velocity;
+                        showHow.Text = $"The Velocity of an object is equal to the distance travelled divided by the time taken. \r\n {Result.Text} = {distanceEntry.Text} m / {timeEntry.Text} s";
                     }
                 }
             }

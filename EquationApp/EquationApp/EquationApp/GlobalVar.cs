@@ -8,6 +8,6 @@ namespace EquationApp
 {
     public static class GlobalVar
     {
-        public static bool quickMode = true;
+        public static bool showHow = true;
     }
 }

@@ -12,14 +12,15 @@ namespace EquationApp.Controllers
     {
         public static void ChangeMode()
         {
-            if (GlobalVar.quickMode == true)
+            if (GlobalVar.showHow == true)
             {
-                GlobalVar.quickMode = false;
+                GlobalVar.showHow = false;
             }
             else
             {
-                GlobalVar.quickMode = true;
+                GlobalVar.showHow = true;
             }
         }
+        
     }
 }
