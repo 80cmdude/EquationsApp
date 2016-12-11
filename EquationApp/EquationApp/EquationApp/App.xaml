@@ -4,18 +4,31 @@
   <Application.Resources>
     <ResourceDictionary>
       <Style x:Key="primaryPageTitle" TargetType="Label">
-        <Setter Property="FontSize" Value="30"/>
-        <Setter Property="TextColor" Value="#0C7C59"/>
+        <Setter Property="FontSize" Value="36"/>
+        <Setter Property="TextColor" Value="#0072BB"/>
+        <Setter Property="FontAttributes" Value="Bold" />
       </Style>
       <Style x:Key="result" TargetType="Label">
         <Setter Property="FontSize" Value="26"/>
-        <Setter Property="TextColor" Value="#0C7C59"/>
+        <Setter Property="TextColor" Value="#0072BB"/>
         <Setter Property="FontAttributes" Value="Bold" />
       </Style>
       <Style x:Key="pageStart" TargetType="Label">
         <Setter Property="FontSize" Value="26"/>
-        <Setter Property="TextColor" Value="#0C7C59"/>
+        <Setter Property="TextColor" Value="#0072BB"/>
         <Setter Property="FontAttributes" Value="Bold" />
+      </Style>
+      <Style TargetType="NavigationPage">
+        <Setter Property="BarBackgroundColor" Value="#FF4C3B"/>
+        <Setter Property="BarTextColor" Value="#FFFCF9"/>
+        <Setter Property="BackgroundColor" Value="#FFFCF9" />
+      </Style>
+      <Style x:Key="primaryNavButton" TargetType="Button">
+        <Setter Property="BackgroundColor" Value="#333" />
+        <Setter Property="TextColor" Value="#FFFCF9"/>
+        <Setter Property="FontSize" Value="20"/>
+        <Setter Property="BorderRadius" Value="10"/>
+        <Setter Property="HeightRequest" Value="50" />
       </Style>
     </ResourceDictionary>
   </Application.Resources>

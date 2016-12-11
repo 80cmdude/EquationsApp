@@ -3,9 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="EquationApp.Views.Pages.MechanicsPage">
   <ContentPage.Content>
-    <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Orientation="Vertical" Spacing="15">
+    <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Orientation="Vertical" Spacing="15" Padding="20,20,20,20">
       <Label Text="Mechanics" VerticalOptions="Center" HorizontalOptions="Center" Style="{StaticResource primaryPageTitle}" />
-      <Button Text="v = d/t" Clicked="NavigatePageVDT" />
+      <Button Text="v = d/t" Clicked="NavigatePageVDT" Style="{StaticResource primaryNavButton}" />
     </StackLayout>
   </ContentPage.Content>
 </ContentPage>
