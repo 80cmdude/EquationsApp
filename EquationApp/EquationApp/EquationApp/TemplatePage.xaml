@@ -2,29 +2,29 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:me="clr-namespace:EquationApp;assembly=EquationApp"
-             x:Class="EquationApp.Views.Equations.Resistance_RVI_Page">
+             x:Class="EquationApp.TemplatePage">
   <ScrollView>
     <StackLayout  VerticalOptions="StartAndExpand" HorizontalOptions="FillAndExpand" Orientation="Vertical" Spacing="15" Padding="20,20,20,20">
       <StackLayout x:Name="quickMode">
         <Label Text="I want to Calculate:" Style="{StaticResource pageStart}" />
         <Picker x:Name="calculateTo" Title="Pick a type" HorizontalOptions="FillAndExpand">
           <Picker.Items>
-            <x:String>Resistance</x:String>
-            <x:String>Voltage</x:String>
-            <x:String>Current</x:String>
+            <x:String>Distance</x:String>
+            <x:String>Time</x:String>
+            <x:String>Velocity</x:String>
           </Picker.Items>
         </Picker>
-        <StackLayout x:Name="voltageUI" Orientation="Horizontal">
-          <Label x:Name="voltageLabel" Text="Voltage:" WidthRequest="100" VerticalOptions="Center" />
-          <me:NegativeEntry x:Name="voltageEntry" HorizontalOptions="FillAndExpand"  Keyboard="Numeric" VerticalOptions="Center" Placeholder="Volts" />
+        <StackLayout x:Name="" Orientation="Horizontal">
+          <Label x:Name="" Text="" WidthRequest="100" VerticalOptions="Center" />
+          <me:NegativeEntry x:Name="" HorizontalOptions="FillAndExpand"  Keyboard="Numeric" VerticalOptions="Center" Placeholder="" />
         </StackLayout>
-        <StackLayout x:Name="resistanceUI" Orientation="Horizontal">
-          <Label x:Name="resistanceLabel" Text="Resistance:" WidthRequest="100" VerticalOptions="Center" />
-          <me:NegativeEntry x:Name="resistanceEntry" HorizontalOptions="FillAndExpand"  Keyboard="Numeric" VerticalOptions="Center" Placeholder="Ohms" />
+        <StackLayout x:Name="" Orientation="Horizontal">
+          <Label x:Name="" Text="" WidthRequest="100" VerticalOptions="Center" />
+          <me:NegativeEntry x:Name="" HorizontalOptions="FillAndExpand"  Keyboard="Numeric" VerticalOptions="Center" Placeholder="" />
         </StackLayout>
-        <StackLayout x:Name="currentUI" Orientation="Horizontal">
-          <Label x:Name="currentLabel" Text="Current:" WidthRequest="100" VerticalOptions="Center" />
-          <me:NegativeEntry x:Name="currentEntry" HorizontalOptions="FillAndExpand"  Keyboard="Numeric" VerticalOptions="Center" Placeholder="Amps" />
+        <StackLayout x:Name="" Orientation="Horizontal">
+          <Label x:Name="" Text="" WidthRequest="100" VerticalOptions="Center" />
+          <me:NegativeEntry x:Name="" HorizontalOptions="FillAndExpand"  Keyboard="Numeric" VerticalOptions="Center" Placeholder="" />
         </StackLayout>
         <Button x:Name="calculate" Text="Calculate!" Clicked="Calculate" Style="{StaticResource primaryNavButton}" />
         <Label x:Name="Result" HorizontalOptions="FillAndExpand" Style="{StaticResource result}" />

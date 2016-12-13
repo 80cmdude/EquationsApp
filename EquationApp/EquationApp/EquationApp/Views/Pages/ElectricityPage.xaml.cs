@@ -13,6 +13,7 @@ namespace EquationApp.Views.Pages
     {
         public ElectricityPage()
         {
+            this.Title = "Paguco";
             InitializeComponent();
         }
 

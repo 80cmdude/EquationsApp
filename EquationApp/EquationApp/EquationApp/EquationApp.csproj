@@ -39,7 +39,8 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Controllers\Equations\VelocityEquation.cs" />
+    <Compile Include="Controllers\Equations\Mechanics\VelocityEquation.cs" />
+    <Compile Include="Controllers\Equations\Electricity\Resistance_RVI.cs" />
     <Compile Include="Controllers\ModeChange.cs" />
     <Compile Include="Controls\NegativeEntry.cs" />
     <Compile Include="Controls\UnderlineEffect.cs" />
@@ -47,7 +48,11 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Models\Utils.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Template.xaml.cs">
+      <DependentUpon>Template.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Equations\Resistance_RVI_Page.xaml.cs">
       <DependentUpon>Resistance_RVI_Page.xaml</DependentUpon>
     </Compile>
@@ -96,9 +101,7 @@
       <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Models\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <EmbeddedResource Include="Views\Pages\ElectricityPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
@@ -113,6 +116,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\Equations\Resistance_RVI_Page.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Template.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>
