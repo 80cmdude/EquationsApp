@@ -23,5 +23,24 @@ namespace EquationApp
 
             return x * y;
         }
+
+        public static decimal SquareRoot(decimal number)
+        {
+            decimal sqrt = 0;
+            decimal tempNumber1, tempNumber2;
+            decimal e = 0.00000000000000000001m;
+
+            sqrt = number;
+            tempNumber2 = sqrt * sqrt;
+
+            while (tempNumber2 - number >= e)
+            {
+                tempNumber1 = (sqrt + (number / sqrt)) / 2;
+                sqrt = tempNumber1;
+                tempNumber2 = sqrt * sqrt;
+            }
+
+            return sqrt;
+        }
     }
 }
