@@ -25,5 +25,10 @@ namespace EquationApp.Views.Pages
         {
             await Navigation.PushAsync(new Distance_SUAT_Page());
         }
+
+        async void NavigatePageVUAT(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Velocity_VUAT_Page());
+        }
     }
 }

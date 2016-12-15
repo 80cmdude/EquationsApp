@@ -7,6 +7,7 @@
       <Label Text="Mechanics" VerticalOptions="Center" HorizontalOptions="Center" Style="{StaticResource primaryPageTitle}" />
       <Button Text="v = d/t" Clicked="NavigatePageVDT" Style="{StaticResource primaryNavButton}" />
       <Button Text="s = u+(at^2)/2" Clicked="NavigatePageSUAT" Style="{StaticResource primaryNavButton}" />
+      <Button Text="v = u + at" Clicked="NavigatePageVUAT" Style="{StaticResource primaryNavButton}" />
     </StackLayout>
   </ContentPage.Content>
 </ContentPage>

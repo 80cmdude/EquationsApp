@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:me="clr-namespace:EquationApp;assembly=EquationApp"
+             x:Class="EquationApp.Views.Equations.Velocity_VUAT_Page">
+  <ScrollView>
+    <StackLayout  VerticalOptions="StartAndExpand" HorizontalOptions="FillAndExpand" Orientation="Vertical" Spacing="15" Padding="20,20,20,20">
+      <StackLayout x:Name="quickMode">
+        <Label Text="I want to Calculate:" Style="{StaticResource pageStart}" />
+        <Picker x:Name="calculateTo" Title="Pick a type" HorizontalOptions="FillAndExpand">
+          <Picker.Items>
+            <x:String>Final Velocity</x:String>
+            <x:String>Initial Velocity</x:String>
+            <x:String>Acceleration</x:String>
+            <x:String>Time</x:String>
+          </Picker.Items>
+        </Picker>
+        <StackLayout x:Name="finalVelocityUI" Orientation="Horizontal">
+          <Label x:Name="finalVelocityLabel" Text="Final Velocity (V):" WidthRequest="100" VerticalOptions="Center" />
+          <me:NegativeEntry x:Name="finalVelocityEntry" HorizontalOptions="FillAndExpand"  Keyboard="Numeric" VerticalOptions="Center" Placeholder="" />
+        </StackLayout>
+        <StackLayout x:Name="initialVelocityUI" Orientation="Horizontal">
+          <Label x:Name="initialVelocityLabel" Text="Initial Velocity (U):" WidthRequest="100" VerticalOptions="Center" />
+          <me:NegativeEntry x:Name="initialVelocityEntry" HorizontalOptions="FillAndExpand"  Keyboard="Numeric" VerticalOptions="Center" Placeholder="m/s" />
+        </StackLayout>
+        <StackLayout x:Name="accelerationUI" Orientation="Horizontal">
+          <Label x:Name="accelerationLabel" Text="Acceleration (A):" WidthRequest="100" VerticalOptions="Center" />
+          <me:NegativeEntry x:Name="accelerationEntry" HorizontalOptions="FillAndExpand"  Keyboard="Numeric" VerticalOptions="Center" Placeholder="m/s^2" />
+        </StackLayout>
+        <StackLayout x:Name="timeUI" Orientation="Horizontal">
+          <Label x:Name="timeLabel" Text="Time (t):" WidthRequest="100" VerticalOptions="Center" />
+          <me:NegativeEntry x:Name="timeEntry" HorizontalOptions="FillAndExpand"  Keyboard="Numeric" VerticalOptions="Center" Placeholder="m/s^2" />
+        </StackLayout>
+        <Button x:Name="calculate" Text="Calculate!" Clicked="Calculate" Style="{StaticResource primaryNavButton}" />
+        <Label x:Name="Result" HorizontalOptions="FillAndExpand" Style="{StaticResource result}" />
+      </StackLayout>
+      <StackLayout VerticalOptions="End">
+        <Button x:Name="modeChangerButton" Text="Show me how" Clicked="ChangeMode" Style="{StaticResource primaryNavButton}" />
+      </StackLayout>
+      <StackLayout x:Name="learnerMode" IsVisible="false">
+        <Label x:Name="showHow" Text="Pick a value to calculate" Style="{StaticResource equationExplanation}" />
+      </StackLayout>
+    </StackLayout>
+  </ScrollView>
+</ContentPage>

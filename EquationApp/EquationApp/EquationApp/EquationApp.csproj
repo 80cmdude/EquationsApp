@@ -42,6 +42,7 @@
     <Compile Include="Controllers\Equations\Mechanics\Distance_SUAT.cs" />
     <Compile Include="Controllers\Equations\Mechanics\VelocityEquation.cs" />
     <Compile Include="Controllers\Equations\Electricity\Resistance_RVI.cs" />
+    <Compile Include="Controllers\Equations\Mechanics\Velocity_VUAT.cs" />
     <Compile Include="Controllers\ModeChange.cs" />
     <Compile Include="Controls\NegativeEntry.cs" />
     <Compile Include="Controls\UnderlineEffect.cs" />
@@ -63,6 +64,9 @@
     </Compile>
     <Compile Include="Views\Equations\Velocity_VDT_Page.xaml.cs">
       <DependentUpon>Velocity_VDT_Page.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Equations\Velocity_VUAT_Page.xaml.cs">
+      <DependentUpon>Velocity_VUAT_Page.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\Pages\ElectricityPage.xaml.cs">
       <DependentUpon>ElectricityPage.xaml</DependentUpon>
@@ -132,6 +136,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Template.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\Equations\Velocity_VUAT_Page.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

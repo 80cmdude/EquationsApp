@@ -21,7 +21,7 @@ namespace EquationApp
             //calculateTo.SelectedIndexChanged += (sender, args) =>
             //{
             //    SetInputFields();
-            //    <Set all the ui elements to empty here>
+            //    <Set all the ui entrys to empty here>
             //};
         }
 
