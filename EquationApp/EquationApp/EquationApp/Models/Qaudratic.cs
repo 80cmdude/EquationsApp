@@ -10,5 +10,6 @@ namespace EquationApp.Models
     {
         public decimal answer1 { get; set; }
         public decimal answer2 { get; set; }
+        public bool success { get; set; }
     }
 }

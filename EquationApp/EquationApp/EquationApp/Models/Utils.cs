@@ -63,12 +63,21 @@ namespace EquationApp
         {
             decimal derivitive = (b * b) - (Convert.ToDecimal(4) * a * c);
             decimal rootDerivitive = Utils.SquareRoot(derivitive);
-            decimal x1 = (-b + rootDerivitive) / (Convert.ToDecimal(2) * a);
-            decimal x2 = (-b - rootDerivitive) / (Convert.ToDecimal(2) * a);
 
             Qaudratic quad = new Qaudratic();
-            quad.answer1 = Math.Round(x1,3);
-            quad.answer2 = Math.Round(x2,3);
+
+            if (rootDerivitive <= 0)
+            {
+                quad.success = false;
+            }
+            else
+            {
+                decimal x1 = (-b + rootDerivitive) / (Convert.ToDecimal(2) * a);
+                decimal x2 = (-b - rootDerivitive) / (Convert.ToDecimal(2) * a);
+                quad.success = true;
+                quad.answer1 = Math.Round(x1, 3);
+                quad.answer2 = Math.Round(x2, 3);
+            }
             return quad;
         }
     }

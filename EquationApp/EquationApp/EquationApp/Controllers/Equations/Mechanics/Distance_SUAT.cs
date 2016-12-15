@@ -58,22 +58,28 @@ namespace EquationApp.Controllers.Equations
             {
                 UtilsNS helper = new UtilsNS();
                 Qaudratic quad = helper.SolveQuadratic(a, U, s);
-
-                if (quad.answer1 == quad.answer2)
+                if (quad.success == false)
                 {
-                    return $"{quad.answer1} s";
-                }
-                else if (quad.answer1 <= 0)
-                {
-                    return $"{quad.answer2} s";
-                }
-                else if (quad.answer2 <= 0)
-                {
-                    return $"{quad.answer1} s";
+                    return "Result is Imaginary";
                 }
                 else
                 {
-                    return $"{quad.answer1} s OR {quad.answer2} s";
+                    if (quad.answer1 == quad.answer2)
+                    {
+                        return $"{quad.answer1} s";
+                    }
+                    else if (quad.answer1 <= 0)
+                    {
+                        return $"{quad.answer2} s";
+                    }
+                    else if (quad.answer2 <= 0)
+                    {
+                        return $"{quad.answer1} s";
+                    }
+                    else
+                    {
+                        return $"{quad.answer1} s OR {quad.answer2} s";
+                    }
                 }
             }
         }
