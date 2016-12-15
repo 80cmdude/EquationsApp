@@ -17,7 +17,7 @@
         </Picker>
         <StackLayout x:Name="finalVelocityUI" Orientation="Horizontal">
           <Label x:Name="finalVelocityLabel" Text="Final Velocity (V):" WidthRequest="100" VerticalOptions="Center" />
-          <me:NegativeEntry x:Name="finalVelocityEntry" HorizontalOptions="FillAndExpand"  Keyboard="Numeric" VerticalOptions="Center" Placeholder="" />
+          <me:NegativeEntry x:Name="finalVelocityEntry" HorizontalOptions="FillAndExpand"  Keyboard="Numeric" VerticalOptions="Center" Placeholder="m/s" />
         </StackLayout>
         <StackLayout x:Name="initialVelocityUI" Orientation="Horizontal">
           <Label x:Name="initialVelocityLabel" Text="Initial Velocity (U):" WidthRequest="100" VerticalOptions="Center" />
@@ -29,7 +29,7 @@
         </StackLayout>
         <StackLayout x:Name="timeUI" Orientation="Horizontal">
           <Label x:Name="timeLabel" Text="Time (t):" WidthRequest="100" VerticalOptions="Center" />
-          <me:NegativeEntry x:Name="timeEntry" HorizontalOptions="FillAndExpand"  Keyboard="Numeric" VerticalOptions="Center" Placeholder="m/s^2" />
+          <me:NegativeEntry x:Name="timeEntry" HorizontalOptions="FillAndExpand"  Keyboard="Numeric" VerticalOptions="Center" Placeholder="s" />
         </StackLayout>
         <Button x:Name="calculate" Text="Calculate!" Clicked="Calculate" Style="{StaticResource primaryNavButton}" />
         <Label x:Name="Result" HorizontalOptions="FillAndExpand" Style="{StaticResource result}" />
