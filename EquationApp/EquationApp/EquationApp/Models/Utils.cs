@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using EquationApp.Models;
 
 namespace EquationApp
 {
@@ -24,6 +25,11 @@ namespace EquationApp
             return x * y;
         }
 
+        /// <summary>
+        /// Don't need to convert number to double
+        /// </summary>
+        /// <param name="number"></param>
+        /// <returns></returns>
         public static decimal SquareRoot(decimal number)
         {
             decimal sqrt = 0;
@@ -43,4 +49,28 @@ namespace EquationApp
             return sqrt;
         }
     }
+
+    public class UtilsNS
+    {
+        /// <summary>
+        /// x^2 + x + C = 0
+        /// </summary>
+        /// <param name="a"></param>
+        /// <param name="b"></param>
+        /// <param name="c"></param>
+        /// <returns>Object with both values</returns>
+        public Qaudratic SolveQuadratic(decimal a, decimal b, decimal c)
+        {
+            decimal derivitive = (b * b) - (Convert.ToDecimal(4) * a * c);
+            decimal rootDerivitive = Utils.SquareRoot(derivitive);
+            decimal x1 = (-b + rootDerivitive) / (Convert.ToDecimal(2) * a);
+            decimal x2 = (-b - rootDerivitive) / (Convert.ToDecimal(2) * a);
+
+            Qaudratic quad = new Qaudratic();
+            quad.answer1 = Math.Round(x1,3);
+            quad.answer2 = Math.Round(x2,3);
+            return quad;
+        }
+    }
+
 }

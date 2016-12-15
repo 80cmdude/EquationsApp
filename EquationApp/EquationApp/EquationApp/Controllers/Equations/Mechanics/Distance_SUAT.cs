@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using EquationApp;
+using EquationApp.Models;
 
 namespace EquationApp.Controllers.Equations
 {
@@ -43,22 +44,38 @@ namespace EquationApp.Controllers.Equations
         }
 
         public static string GetTime(string distance, string initialVelocity, string acceleration)
-        {
-            decimal s = Convert.ToDecimal(distance);
+        { 
+            decimal s = -Convert.ToDecimal(distance);
             decimal U = Convert.ToDecimal(initialVelocity);
             decimal a = Convert.ToDecimal(acceleration);
 
-            decimal x = -a / 2;
-            decimal y = -U;
-            decimal z = s;
+            if (a == 0)
+            {
+                decimal answer = -s / U;
+                return $"{answer} s";
+            }
+            else
+            {
+                UtilsNS helper = new UtilsNS();
+                Qaudratic quad = helper.SolveQuadratic(a, U, s);
 
-            decimal t1 = -y + Utils.SquareRoot(Math.Round(((y * y) - Convert.ToDecimal(4) * x * z),3)) / (Convert.ToDecimal(2) * x);
-            decimal t2 = -y - Utils.SquareRoot(Math.Round(((y * y) - Convert.ToDecimal(4) * x * z), 3)) / (Convert.ToDecimal(2) * x);
-
-            string answer1 =  $"{Math.Round(t1, 3).ToString()}";
-            string answer2 = $"{Math.Round(t2, 3).ToString()}";
-
-            return $"{answer1} s OR {answer2} s";
+                if (quad.answer1 == quad.answer2)
+                {
+                    return $"{quad.answer1} s";
+                }
+                else if (quad.answer1 <= 0)
+                {
+                    return $"{quad.answer2} s";
+                }
+                else if (quad.answer2 <= 0)
+                {
+                    return $"{quad.answer1} s";
+                }
+                else
+                {
+                    return $"{quad.answer1} s OR {quad.answer2} s";
+                }
+            }
         }
     }
 }
