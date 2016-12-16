@@ -84,20 +84,20 @@ namespace EquationApp.Views.Equations
                 {
                     if (calculateTo.SelectedIndex == 0)
                     {
-                        string distance = VelocityEquation.GetDistance(velocityEntry.Text, timeEntry.Text);
-                        Result.Text = distance;
-                        showHow.Text = String.Format(AppResources.velocity_VDT_distanceAnswer, Result.Text, velocityEntry.Text, timeEntry.Text);
+                        decimal distance = VelocityEquation.GetDistance(velocityEntry.Text, timeEntry.Text);
+                        Result.Text = string.Format(AppResources.lblResultDistance, distance);
+                        showHow.Text = string.Format(AppResources.velocity_VDT_distanceAnswer, Result.Text, velocityEntry.Text, timeEntry.Text);
                     }
                     else if (calculateTo.SelectedIndex == 1)
                     {
-                        string time = VelocityEquation.GetTime(velocityEntry.Text, distanceEntry.Text);
-                        Result.Text = time;
+                        decimal time = VelocityEquation.GetTime(velocityEntry.Text, distanceEntry.Text);
+                        Result.Text = string.Format(AppResources.lblResultTime, time);
                         showHow.Text = $"The time taken for an object to travel a distance is equal to the distance travelled divide by the velocity. \r\n {Result.Text} = {distanceEntry.Text} / {velocityEntry.Text}";
                     }
                     else
                     {
-                        string velocity = VelocityEquation.GetVelocity(distanceEntry.Text, timeEntry.Text);
-                        Result.Text = velocity;
+                        decimal velocity = VelocityEquation.GetVelocity(distanceEntry.Text, timeEntry.Text);
+                        Result.Text = string.Format(AppResources.lblResultVelocity, velocity);
                         showHow.Text = $"The Velocity of an object is equal to the distance travelled divided by the time taken. \r\n {Result.Text} = {distanceEntry.Text} m / {timeEntry.Text} s";
                     }
                 }

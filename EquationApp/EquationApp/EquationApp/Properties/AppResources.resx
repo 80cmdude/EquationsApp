@@ -145,6 +145,34 @@
     <value>Must enter a valid number into the fields</value>
     <comment>Error</comment>
   </data>
+  <data name="lblResultAcceleration" xml:space="preserve">
+    <value>{0} m/s^2</value>
+    <comment>Acceleration</comment>
+  </data>
+  <data name="lblResultCurrent" xml:space="preserve">
+    <value>{0} A</value>
+    <comment>Current</comment>
+  </data>
+  <data name="lblResultDistance" xml:space="preserve">
+    <value>{0} m</value>
+    <comment>Distance</comment>
+  </data>
+  <data name="lblResultResistance" xml:space="preserve">
+    <value>{0} ohms</value>
+    <comment>Resistance</comment>
+  </data>
+  <data name="lblResultTime" xml:space="preserve">
+    <value>{0} s</value>
+    <comment>Time</comment>
+  </data>
+  <data name="lblResultVelocity" xml:space="preserve">
+    <value>{0} m/s</value>
+    <comment>Velocity</comment>
+  </data>
+  <data name="lblResultVoltage" xml:space="preserve">
+    <value>{0} V</value>
+    <comment>Voltage</comment>
+  </data>
   <data name="lblTitleAcceleration" xml:space="preserve">
     <value>Acceleration:</value>
     <comment>Acceleration</comment>

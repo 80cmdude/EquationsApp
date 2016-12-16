@@ -125,6 +125,69 @@ namespace EquationApp.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to {0} m/s^2.
+        /// </summary>
+        public static string lblResultAcceleration {
+            get {
+                return ResourceManager.GetString("lblResultAcceleration", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {0} A.
+        /// </summary>
+        public static string lblResultCurrent {
+            get {
+                return ResourceManager.GetString("lblResultCurrent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {0} m.
+        /// </summary>
+        public static string lblResultDistance {
+            get {
+                return ResourceManager.GetString("lblResultDistance", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {0} ohms.
+        /// </summary>
+        public static string lblResultResistance {
+            get {
+                return ResourceManager.GetString("lblResultResistance", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {0} s.
+        /// </summary>
+        public static string lblResultTime {
+            get {
+                return ResourceManager.GetString("lblResultTime", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {0} m/s.
+        /// </summary>
+        public static string lblResultVelocity {
+            get {
+                return ResourceManager.GetString("lblResultVelocity", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {0} V.
+        /// </summary>
+        public static string lblResultVoltage {
+            get {
+                return ResourceManager.GetString("lblResultVoltage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Acceleration:.
         /// </summary>
         public static string lblTitleAcceleration {
