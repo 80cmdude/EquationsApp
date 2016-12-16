@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using EquationApp.Controllers.Equations;
 using EquationApp;
 using EquationApp.Controllers;
+using EquationApp.Properties;
 
 using Xamarin.Forms;
 
@@ -20,6 +21,7 @@ namespace EquationApp.Views.Equations
             velocityUI.IsVisible = false;
             distanceUI.IsVisible = false;
             timeUI.IsVisible = false;
+            //Result.Text = AppResources.titleCalculate;
 
             calculateTo.SelectedIndexChanged += (sender, args) => 
             {
@@ -85,7 +87,7 @@ namespace EquationApp.Views.Equations
                     {
                         string distance = VelocityEquation.GetDistance(velocityEntry.Text, timeEntry.Text);
                         Result.Text = distance;
-                        showHow.Text = $"The distance travelled of and object is equal to the velocity of the object times the time it takes. \r\n {Result.Text} = {velocityEntry.Text} * {timeEntry.Text}";
+                        showHow.Text = String.Format(AppResources.velocity_VDT_distanceAnswer, Result.Text, velocityEntry.Text, timeEntry.Text);
                     }
                     else if (calculateTo.SelectedIndex == 1)
                     {
