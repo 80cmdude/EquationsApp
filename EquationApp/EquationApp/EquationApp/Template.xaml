@@ -15,15 +15,15 @@
           </Picker.Items>
         </Picker>
         <StackLayout x:Name="filler" Orientation="Horizontal">
-          <Label x:Name="filler" Text="filler" WidthRequest="100" VerticalOptions="Center" />
+          <Label x:Name="filler" Text="filler" WidthRequest="100" VerticalOptions="Center" Style="{StaticResource valueLabel}" />
           <me:NegativeEntry x:Name="filler" HorizontalOptions="FillAndExpand"  Keyboard="Numeric" VerticalOptions="Center" Placeholder="" />
         </StackLayout>
         <StackLayout x:Name="filler" Orientation="Horizontal">
-          <Label x:Name="filler" Text="filler" WidthRequest="100" VerticalOptions="Center" />
+          <Label x:Name="filler" Text="filler" WidthRequest="100" VerticalOptions="Center" Style="{StaticResource valueLabel}" />
           <me:NegativeEntry x:Name="filler" HorizontalOptions="FillAndExpand"  Keyboard="Numeric" VerticalOptions="Center" Placeholder="" />
         </StackLayout>
         <StackLayout x:Name="filler" Orientation="Horizontal">
-          <Label x:Name="filler" Text="filler" WidthRequest="100" VerticalOptions="Center" />
+          <Label x:Name="filler" Text="filler" WidthRequest="100" VerticalOptions="Center" Style="{StaticResource valueLabel}" />
           <me:NegativeEntry x:Name="filler" HorizontalOptions="FillAndExpand"  Keyboard="Numeric" VerticalOptions="Center" Placeholder="" />
         </StackLayout>
         <Button x:Name="calculate" Text="Calculate!" Clicked="" Style="{StaticResource primaryNavButton}" />

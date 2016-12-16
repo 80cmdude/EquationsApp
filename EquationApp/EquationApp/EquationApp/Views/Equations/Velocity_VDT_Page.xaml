@@ -15,15 +15,15 @@
           </Picker.Items>
         </Picker>
         <StackLayout x:Name="distanceUI" Orientation="Horizontal">
-          <Label x:Name="distanceLabel" Text="Distance:" WidthRequest="100" VerticalOptions="Center" />
+          <Label x:Name="distanceLabel" Text="Distance:" WidthRequest="100" VerticalOptions="Center" Style="{StaticResource valueLabel}" />
           <me:NegativeEntry x:Name="distanceEntry" HorizontalOptions="FillAndExpand"  Keyboard="Numeric" VerticalOptions="Center" Placeholder="m" />
         </StackLayout>
         <StackLayout x:Name="timeUI" Orientation="Horizontal">
-          <Label x:Name="timeLabel" Text="Time:" WidthRequest="100" VerticalOptions="Center" />
+          <Label x:Name="timeLabel" Text="Time:" WidthRequest="100" VerticalOptions="Center" Style="{StaticResource valueLabel}" />
           <me:NegativeEntry x:Name="timeEntry" HorizontalOptions="FillAndExpand"  Keyboard="Numeric" VerticalOptions="Center" Placeholder="s" />
         </StackLayout>
         <StackLayout x:Name="velocityUI" Orientation="Horizontal">
-          <Label x:Name="velocityLabel" Text="Velocity:" WidthRequest="100" VerticalOptions="Center" />
+          <Label x:Name="velocityLabel" Text="Velocity:" WidthRequest="100" VerticalOptions="Center" Style="{StaticResource valueLabel}" />
           <me:NegativeEntry x:Name="velocityEntry" HorizontalOptions="FillAndExpand"  Keyboard="Numeric" VerticalOptions="Center" Placeholder="m/s" />
         </StackLayout>
         <Button x:Name="calculate" Text="Calculate!" Clicked="Calculate" Style="{StaticResource primaryNavButton}" />

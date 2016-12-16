@@ -15,15 +15,15 @@
           </Picker.Items>
         </Picker>
         <StackLayout x:Name="voltageUI" Orientation="Horizontal">
-          <Label x:Name="voltageLabel" Text="Voltage:" WidthRequest="100" VerticalOptions="Center" />
+          <Label x:Name="voltageLabel" Text="Voltage:" WidthRequest="100" VerticalOptions="Center" Style="{StaticResource valueLabel}" />
           <me:NegativeEntry x:Name="voltageEntry" HorizontalOptions="FillAndExpand"  Keyboard="Numeric" VerticalOptions="Center" Placeholder="Volts" />
         </StackLayout>
         <StackLayout x:Name="resistanceUI" Orientation="Horizontal">
-          <Label x:Name="resistanceLabel" Text="Resistance:" WidthRequest="100" VerticalOptions="Center" />
+          <Label x:Name="resistanceLabel" Text="Resistance:" WidthRequest="100" VerticalOptions="Center" Style="{StaticResource valueLabel}" />
           <me:NegativeEntry x:Name="resistanceEntry" HorizontalOptions="FillAndExpand"  Keyboard="Numeric" VerticalOptions="Center" Placeholder="Ohms" />
         </StackLayout>
         <StackLayout x:Name="currentUI" Orientation="Horizontal">
-          <Label x:Name="currentLabel" Text="Current:" WidthRequest="100" VerticalOptions="Center" />
+          <Label x:Name="currentLabel" Text="Current:" WidthRequest="100" VerticalOptions="Center" Style="{StaticResource valueLabel}" />
           <me:NegativeEntry x:Name="currentEntry" HorizontalOptions="FillAndExpand"  Keyboard="Numeric" VerticalOptions="Center" Placeholder="Amps" />
         </StackLayout>
         <Button x:Name="calculate" Text="Calculate!" Clicked="Calculate" Style="{StaticResource primaryNavButton}" />

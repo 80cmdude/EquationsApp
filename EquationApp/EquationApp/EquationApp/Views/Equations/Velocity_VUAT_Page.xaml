@@ -16,19 +16,19 @@
           </Picker.Items>
         </Picker>
         <StackLayout x:Name="finalVelocityUI" Orientation="Horizontal">
-          <Label x:Name="finalVelocityLabel" Text="Final Velocity (V):" WidthRequest="100" VerticalOptions="Center" />
+          <Label x:Name="finalVelocityLabel" Text="Final Velocity (V):" WidthRequest="100" VerticalOptions="Center" Style="{StaticResource valueLabel}" />
           <me:NegativeEntry x:Name="finalVelocityEntry" HorizontalOptions="FillAndExpand"  Keyboard="Numeric" VerticalOptions="Center" Placeholder="m/s" />
         </StackLayout>
         <StackLayout x:Name="initialVelocityUI" Orientation="Horizontal">
-          <Label x:Name="initialVelocityLabel" Text="Initial Velocity (U):" WidthRequest="100" VerticalOptions="Center" />
+          <Label x:Name="initialVelocityLabel" Text="Initial Velocity (U):" WidthRequest="100" VerticalOptions="Center" Style="{StaticResource valueLabel}" />
           <me:NegativeEntry x:Name="initialVelocityEntry" HorizontalOptions="FillAndExpand"  Keyboard="Numeric" VerticalOptions="Center" Placeholder="m/s" />
         </StackLayout>
         <StackLayout x:Name="accelerationUI" Orientation="Horizontal">
-          <Label x:Name="accelerationLabel" Text="Acceleration (A):" WidthRequest="100" VerticalOptions="Center" />
+          <Label x:Name="accelerationLabel" Text="Acceleration (A):" WidthRequest="100" VerticalOptions="Center" Style="{StaticResource valueLabel}" />
           <me:NegativeEntry x:Name="accelerationEntry" HorizontalOptions="FillAndExpand"  Keyboard="Numeric" VerticalOptions="Center" Placeholder="m/s^2" />
         </StackLayout>
         <StackLayout x:Name="timeUI" Orientation="Horizontal">
-          <Label x:Name="timeLabel" Text="Time (t):" WidthRequest="100" VerticalOptions="Center" />
+          <Label x:Name="timeLabel" Text="Time (t):" WidthRequest="100" VerticalOptions="Center" Style="{StaticResource valueLabel}" />
           <me:NegativeEntry x:Name="timeEntry" HorizontalOptions="FillAndExpand"  Keyboard="Numeric" VerticalOptions="Center" Placeholder="s" />
         </StackLayout>
         <Button x:Name="calculate" Text="Calculate!" Clicked="Calculate" Style="{StaticResource primaryNavButton}" />

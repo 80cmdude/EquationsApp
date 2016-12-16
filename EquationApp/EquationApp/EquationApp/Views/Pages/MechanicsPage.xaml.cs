@@ -13,6 +13,7 @@ namespace EquationApp.Views.Pages
     {
         public MechanicsPage()
         {
+            this.Title = "Paguco";
             InitializeComponent();
         }
 
