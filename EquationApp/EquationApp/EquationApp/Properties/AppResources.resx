@@ -117,10 +117,108 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="titleCalculate" xml:space="preserve">
+  <data name="btnCalculate" xml:space="preserve">
+    <value>Calculate</value>
+    <comment>Global_Button</comment>
+  </data>
+  <data name="btnHideHow" xml:space="preserve">
+    <value>Hide How</value>
+    <comment>Global_Button</comment>
+  </data>
+  <data name="btnShowMeHow" xml:space="preserve">
+    <value>Show Me How</value>
+    <comment>Global_Button</comment>
+  </data>
+  <data name="emptyEquationPickerResult" xml:space="preserve">
+    <value>Pick a value to calculate</value>
+    <comment>Global_Label</comment>
+  </data>
+  <data name="emtpyEquationPickerCalculate" xml:space="preserve">
+    <value>Please select a value to calculate</value>
+    <comment>Error</comment>
+  </data>
+  <data name="errorDivideByZeroMessage" xml:space="preserve">
+    <value>Cannot divide by 0</value>
+    <comment>Error</comment>
+  </data>
+  <data name="errorFormatMessage" xml:space="preserve">
+    <value>Must enter a valid number into the fields</value>
+    <comment>Error</comment>
+  </data>
+  <data name="lblTitleAcceleration" xml:space="preserve">
+    <value>Acceleration:</value>
+    <comment>Acceleration</comment>
+  </data>
+  <data name="lblTitleCalculate" xml:space="preserve">
     <value>I want to calculate:</value>
+    <comment>Global_Label</comment>
+  </data>
+  <data name="lblTitleCurrent" xml:space="preserve">
+    <value>Current (I):</value>
+    <comment>Current</comment>
+  </data>
+  <data name="lblTitleDistance" xml:space="preserve">
+    <value>Distance:</value>
+    <comment>Distance</comment>
+  </data>
+  <data name="lblTitleFinalVelocity" xml:space="preserve">
+    <value>Final Velocity:</value>
+    <comment>Velocity</comment>
+  </data>
+  <data name="lblTitleInitialVelocity" xml:space="preserve">
+    <value>Initial Velocity:</value>
+    <comment>Velocity</comment>
+  </data>
+  <data name="lblTitleResistance" xml:space="preserve">
+    <value>Resistance (R):</value>
+    <comment>Resistance</comment>
+  </data>
+  <data name="lblTitleTime" xml:space="preserve">
+    <value>Time:</value>
+    <comment>Time</comment>
+  </data>
+  <data name="lblTitleVelocity" xml:space="preserve">
+    <value>Velocity:</value>
+    <comment>Velocity</comment>
+  </data>
+  <data name="lblTitleVoltage" xml:space="preserve">
+    <value>Voltage(V):</value>
+    <comment>Voltage</comment>
+  </data>
+  <data name="paguco" xml:space="preserve">
+    <value>Paguco</value>
+    <comment>Name</comment>
+  </data>
+  <data name="pickerEquationTitle" xml:space="preserve">
+    <value>Pick a type</value>
+    <comment>Global_Picker</comment>
+  </data>
+  <data name="pickerResultAcceleration" xml:space="preserve">
+    <value>Acceleration</value>
+    <comment>Acceleration</comment>
+  </data>
+  <data name="pickerResultDistance" xml:space="preserve">
+    <value>Distance</value>
+    <comment>Distance</comment>
+  </data>
+  <data name="pickerResultFinalVelocity" xml:space="preserve">
+    <value>Final Velocity</value>
+    <comment>Velocity</comment>
+  </data>
+  <data name="pickerResultInitialVelocity" xml:space="preserve">
+    <value>Initial Velocity</value>
+    <comment>Velocity</comment>
+  </data>
+  <data name="pickerResultTime" xml:space="preserve">
+    <value>Time</value>
+    <comment>Time</comment>
+  </data>
+  <data name="pickerResultVelocity" xml:space="preserve">
+    <value>Velocity</value>
+    <comment>Velocity</comment>
   </data>
   <data name="velocity_VDT_distanceAnswer" xml:space="preserve">
     <value>The distance travelled of and object is equal to the velocity of the object times the time it takes. \r\n {0} = {1} * {2}</value>
+    <comment>Velocity_VDT_Page</comment>
   </data>
 </root>

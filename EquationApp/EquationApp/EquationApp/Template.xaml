@@ -2,12 +2,13 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:me="clr-namespace:EquationApp;assembly=EquationApp"
+             xmlns:resx="clr-namespace:EquationApp.Properties"
              x:Class="EquationApp.Template">
   <ScrollView>
     <StackLayout  VerticalOptions="StartAndExpand" HorizontalOptions="FillAndExpand" Orientation="Vertical" Spacing="15" Padding="20,20,20,20">
       <StackLayout x:Name="quickMode">
-        <Label Text="I want to Calculate:" Style="{StaticResource pageStart}" />
-        <Picker x:Name="calculateTo" Title="Pick a type" HorizontalOptions="FillAndExpand">
+        <Label Text="{x:Static resx:AppResources.lblTitlCalculate}" Style="{StaticResource pageStart}" />
+        <Picker x:Name="calculateTo" Title="{x:Static resx:AppResources.pickerEquationTitle}" HorizontalOptions="FillAndExpand">
           <Picker.Items>
             <x:String>X</x:String>
             <x:String>Y</x:String>
@@ -26,14 +27,14 @@
           <Label x:Name="filler" Text="filler" WidthRequest="100" VerticalOptions="Center" Style="{StaticResource valueLabel}" />
           <me:NegativeEntry x:Name="filler" HorizontalOptions="FillAndExpand"  Keyboard="Numeric" VerticalOptions="Center" Placeholder="" />
         </StackLayout>
-        <Button x:Name="calculate" Text="Calculate!" Clicked="" Style="{StaticResource primaryNavButton}" />
+        <Button x:Name="calculate" Text="{x:Static resx:AppResources.btnCalculate}" Clicked="" Style="{StaticResource primaryNavButton}" />
         <Label x:Name="Result" HorizontalOptions="FillAndExpand" Style="{StaticResource result}" />
       </StackLayout>
       <StackLayout VerticalOptions="End">
-        <Button x:Name="modeChangerButton" Text="Show me how" Clicked="ChangeMode" Style="{StaticResource primaryNavButton}" />
+        <Button x:Name="modeChangerButton" Text="{x:Static resx:AppResources.btnShowMeHow}" Clicked="ChangeMode" Style="{StaticResource primaryNavButton}" />
       </StackLayout>
       <StackLayout x:Name="learnerMode" IsVisible="false">
-        <Label x:Name="showHow" Text="Pick a value to calculate" Style="{StaticResource equationExplanation}" />
+        <Label x:Name="showHow" Text="{x:Static resx:AppResources.emptyEquationPickerResult}" Style="{StaticResource equationExplanation}" />
       </StackLayout>
     </StackLayout>
   </ScrollView>

@@ -62,11 +62,227 @@ namespace EquationApp.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Calculate.
+        /// </summary>
+        public static string btnCalculate {
+            get {
+                return ResourceManager.GetString("btnCalculate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Hide How.
+        /// </summary>
+        public static string btnHideHow {
+            get {
+                return ResourceManager.GetString("btnHideHow", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Show Me How.
+        /// </summary>
+        public static string btnShowMeHow {
+            get {
+                return ResourceManager.GetString("btnShowMeHow", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Pick a value to calculate.
+        /// </summary>
+        public static string emptyEquationPickerResult {
+            get {
+                return ResourceManager.GetString("emptyEquationPickerResult", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please select a value to calculate.
+        /// </summary>
+        public static string emtpyEquationPickerCalculate {
+            get {
+                return ResourceManager.GetString("emtpyEquationPickerCalculate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cannot divide by 0.
+        /// </summary>
+        public static string errorDivideByZeroMessage {
+            get {
+                return ResourceManager.GetString("errorDivideByZeroMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Must enter a valid number into the fields.
+        /// </summary>
+        public static string errorFormatMessage {
+            get {
+                return ResourceManager.GetString("errorFormatMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Acceleration:.
+        /// </summary>
+        public static string lblTitleAcceleration {
+            get {
+                return ResourceManager.GetString("lblTitleAcceleration", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to I want to calculate:.
         /// </summary>
-        public static string titleCalculate {
+        public static string lblTitleCalculate {
             get {
-                return ResourceManager.GetString("titleCalculate", resourceCulture);
+                return ResourceManager.GetString("lblTitleCalculate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Current (I):.
+        /// </summary>
+        public static string lblTitleCurrent {
+            get {
+                return ResourceManager.GetString("lblTitleCurrent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Distance:.
+        /// </summary>
+        public static string lblTitleDistance {
+            get {
+                return ResourceManager.GetString("lblTitleDistance", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Final Velocity:.
+        /// </summary>
+        public static string lblTitleFinalVelocity {
+            get {
+                return ResourceManager.GetString("lblTitleFinalVelocity", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Initial Velocity:.
+        /// </summary>
+        public static string lblTitleInitialVelocity {
+            get {
+                return ResourceManager.GetString("lblTitleInitialVelocity", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Resistance (R):.
+        /// </summary>
+        public static string lblTitleResistance {
+            get {
+                return ResourceManager.GetString("lblTitleResistance", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Time:.
+        /// </summary>
+        public static string lblTitleTime {
+            get {
+                return ResourceManager.GetString("lblTitleTime", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Velocity:.
+        /// </summary>
+        public static string lblTitleVelocity {
+            get {
+                return ResourceManager.GetString("lblTitleVelocity", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Voltage(V):.
+        /// </summary>
+        public static string lblTitleVoltage {
+            get {
+                return ResourceManager.GetString("lblTitleVoltage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Paguco.
+        /// </summary>
+        public static string paguco {
+            get {
+                return ResourceManager.GetString("paguco", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Pick a type.
+        /// </summary>
+        public static string pickerEquationTitle {
+            get {
+                return ResourceManager.GetString("pickerEquationTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Acceleration.
+        /// </summary>
+        public static string pickerResultAcceleration {
+            get {
+                return ResourceManager.GetString("pickerResultAcceleration", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Distance.
+        /// </summary>
+        public static string pickerResultDistance {
+            get {
+                return ResourceManager.GetString("pickerResultDistance", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Final Velocity.
+        /// </summary>
+        public static string pickerResultFinalVelocity {
+            get {
+                return ResourceManager.GetString("pickerResultFinalVelocity", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Initial Velocity.
+        /// </summary>
+        public static string pickerResultInitialVelocity {
+            get {
+                return ResourceManager.GetString("pickerResultInitialVelocity", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Time.
+        /// </summary>
+        public static string pickerResultTime {
+            get {
+                return ResourceManager.GetString("pickerResultTime", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Velocity.
+        /// </summary>
+        public static string pickerResultVelocity {
+            get {
+                return ResourceManager.GetString("pickerResultVelocity", resourceCulture);
             }
         }
         

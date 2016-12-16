@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using EquationApp.Properties;
 
 using Xamarin.Forms;
 
@@ -13,7 +14,7 @@ namespace EquationApp
     {
         public Template()
         {
-            this.Title = "Paguco";
+            this.Title = AppResources.paguco;
             InitializeComponent();
 
             //Add ui elements to remove on first load
@@ -31,12 +32,12 @@ namespace EquationApp
             if (GlobalVar.showHow == true)
             {
                 learnerMode.IsVisible = false;
-                modeChangerButton.Text = "Show me how";
+                modeChangerButton.Text = AppResources.btnShowMeHow;
             }
             else
             {
                 learnerMode.IsVisible = true;
-                modeChangerButton.Text = "Hide how";
+                modeChangerButton.Text = AppResources.btnHideHow;
             }
         }
 
@@ -66,7 +67,7 @@ namespace EquationApp
         //    {
         //        if (calculateTo.SelectedIndex == -1)
         //        {
-        //            Alerts.InvalidInput(messageToUser: "Please select a value to calculate");
+        //            Alerts.InvalidInput(messageToUser: AppResources.emtpyEquationPickerCalculate);
         //        }
         //        else
         //        {
@@ -88,11 +89,11 @@ namespace EquationApp
         //        }
         //    catch (FormatException j)
         //    {
-        //        Alerts.InvalidInput(messageToUser: $"Must enter a valid number into the fields");
+        //        Alerts.InvalidInput(messageToUser: AppResources.errorFormatMessage);
         //    }
         //    catch (DivideByZeroException j)
         //    {
-        //        Alerts.InvalidInput(messageToUser: "Cannot divide by 0");
+        //        Alerts.InvalidInput(messageToUser: AppResources.errorDivideByZeroMessage);
         //    }
         //    catch (Exception j)
         //    {
