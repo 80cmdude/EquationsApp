@@ -245,8 +245,34 @@
     <value>Velocity</value>
     <comment>Velocity</comment>
   </data>
+  <data name="resistance_RVI_currentAnswer" xml:space="preserve">
+    <value>The current running through an element is equal to the voltage divided by the resistance.
+{0} = {1} / {2}</value>
+    <comment>Resistance_RVI_Page</comment>
+  </data>
+  <data name="resistance_RVI_resistanceAnswer" xml:space="preserve">
+    <value>The resistance across an element is equal to the voltage across the element divided by the current running through it.
+{0} = {1} / {2}</value>
+    <comment>Resistance_RVI_Page</comment>
+  </data>
+  <data name="resistance_RVI_voltageAnswer" xml:space="preserve">
+    <value>The voltage across an element it equal to resistance of that element multiplied by the amount of current running through.
+{0} = {1} * {2}</value>
+    <comment>Resistance_RVI_Page</comment>
+  </data>
   <data name="velocity_VDT_distanceAnswer" xml:space="preserve">
-    <value>The distance travelled of and object is equal to the velocity of the object times the time it takes. \r\n {0} = {1} * {2}</value>
+    <value>The distance travelled of and object is equal to the velocity of the object multiplied by the time it takes.
+ {0} = {1} * {2}</value>
+    <comment>Velocity_VDT_Page</comment>
+  </data>
+  <data name="velocity_VDT_timeAnswer" xml:space="preserve">
+    <value>The time taken for an object to travel a distance is equal to the distance travelled divide by the velocity. 
+ {0} = {1} / {2}</value>
+    <comment>Velocity_VDT_Page</comment>
+  </data>
+  <data name="velocity_VDT_velocityAnswer" xml:space="preserve">
+    <value>The Velocity of an object is equal to the distance travelled divided by the time taken.
+{0} = {1} / {2}</value>
     <comment>Velocity_VDT_Page</comment>
   </data>
 </root>

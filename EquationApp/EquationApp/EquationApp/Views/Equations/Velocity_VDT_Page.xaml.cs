@@ -56,19 +56,19 @@ namespace EquationApp.Views.Equations
             {
                 velocityUI.IsVisible = true;
                 timeUI.IsVisible = true;
-                showHow.Text = "The distance travelled of and object is equal to the velocity of the object times the time it takes. \r\n d = v * t";
+                showHow.Text = string.Format(AppResources.velocity_VDT_distanceAnswer, "d", "v", "t");
             }
             else if (calculateTo.SelectedIndex == 1)
             {
                 velocityUI.IsVisible = true;
                 distanceUI.IsVisible = true;
-                showHow.Text = "The time taken for an object to travel a distance is equal to the distance travelled divide by the velocity. \r\n t = d / v";
+                showHow.Text = string.Format(AppResources.velocity_VDT_timeAnswer, "t", "d", "v");
             }
             else
             {
                 distanceUI.IsVisible = true;
                 timeUI.IsVisible = true;
-                showHow.Text = "The Velocity of and object is equal to the distance travelled divided by the time taken. \r\n v = d / t";
+                showHow.Text = string.Format(AppResources.velocity_VDT_velocityAnswer, "v", "d", "t");
             }
         }
 
@@ -86,19 +86,19 @@ namespace EquationApp.Views.Equations
                     {
                         decimal distance = VelocityEquation.GetDistance(velocityEntry.Text, timeEntry.Text);
                         Result.Text = string.Format(AppResources.lblResultDistance, distance);
-                        showHow.Text = string.Format(AppResources.velocity_VDT_distanceAnswer, Result.Text, velocityEntry.Text, timeEntry.Text);
+                        showHow.Text = string.Format(AppResources.velocity_VDT_distanceAnswer, distance, velocityEntry.Text, timeEntry.Text);
                     }
                     else if (calculateTo.SelectedIndex == 1)
                     {
                         decimal time = VelocityEquation.GetTime(velocityEntry.Text, distanceEntry.Text);
                         Result.Text = string.Format(AppResources.lblResultTime, time);
-                        showHow.Text = $"The time taken for an object to travel a distance is equal to the distance travelled divide by the velocity. \r\n {Result.Text} = {distanceEntry.Text} / {velocityEntry.Text}";
+                        showHow.Text = string.Format(AppResources.velocity_VDT_timeAnswer, time, distanceEntry.Text, velocityEntry.Text);
                     }
                     else
                     {
                         decimal velocity = VelocityEquation.GetVelocity(distanceEntry.Text, timeEntry.Text);
                         Result.Text = string.Format(AppResources.lblResultVelocity, velocity);
-                        showHow.Text = $"The Velocity of an object is equal to the distance travelled divided by the time taken. \r\n {Result.Text} = {distanceEntry.Text} m / {timeEntry.Text} s";
+                        showHow.Text = string.Format(AppResources.velocity_VDT_velocityAnswer, velocity, distanceEntry.Text, timeEntry.Text);
                     }
                 }
             }

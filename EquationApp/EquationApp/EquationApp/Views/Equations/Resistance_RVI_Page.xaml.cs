@@ -54,19 +54,19 @@ namespace EquationApp.Views.Equations
             {
                 voltageUI.IsVisible = true;
                 currentUI.IsVisible = true;
-                showHow.Text = "The resistance across an element is equal to the voltage across the element divided by the current running through it. \r\n R = V / I ";
+                showHow.Text = string.Format(AppResources.resistance_RVI_resistanceAnswer, "R", "V", "I");
             }
             else if (calculateTo.SelectedIndex == 1)
             {
                 currentUI.IsVisible = true;
                 resistanceUI.IsVisible = true;
-                showHow.Text = "The voltage across an element it equal to resistance of that element multiplied by the amount of current running through. \r\n V = IR";
+                showHow.Text = string.Format(AppResources.resistance_RVI_voltageAnswer, "V", "I", "R");
             }
             else
             {
                 voltageUI.IsVisible = true;
                 resistanceUI.IsVisible = true;
-                showHow.Text = "The current running through an element is equal to the voltage divided by the resistance. \r\n I = V / R";
+                showHow.Text = string.Format(AppResources.resistance_RVI_currentAnswer, "I", "V", "R");
             }
         }
 
@@ -84,19 +84,19 @@ namespace EquationApp.Views.Equations
                     {
                         string resistance = Resistance_RVI.GetResistance(voltageEntry.Text, currentEntry.Text);
                         Result.Text = resistance;
-                        showHow.Text = $"The current running through an element is equal to the voltage divided by the resistance. \r\n {Result.Text} = {voltageEntry.Text} / {currentEntry.Text}";
+                        showHow.Text = string.Format(AppResources.resistance_RVI_resistanceAnswer, resistance, voltageEntry.Text, currentEntry.Text);
                     }
                     else if (calculateTo.SelectedIndex == 1)
                     {
                         string voltage = Resistance_RVI.GetVoltage(resistanceEntry.Text, currentEntry.Text);
                         Result.Text = voltage;
-                        showHow.Text = $"The voltage across an element it equal to resistance of that element multiplied by the amount of current running through. \r\n {Result.Text} = {resistanceEntry.Text} * {currentEntry.Text}"; 
+                        showHow.Text = string.Format(AppResources.resistance_RVI_voltageAnswer, voltage, currentEntry.Text, resistanceEntry.Text);
                     }
                     else
                     {
                         string current = Resistance_RVI.GetCurrent(voltageEntry.Text, resistanceEntry.Text);
                         Result.Text = current;
-                        showHow.Text = $"The current running through an element is equal to the voltage divided by the resistance. \r\n {Result.Text} = {voltageEntry.Text} / {resistanceEntry.Text}";
+                        showHow.Text = string.Format(AppResources.resistance_RVI_currentAnswer, current, voltageEntry.Text, resistanceEntry.Text);
                     }
                 }
             }

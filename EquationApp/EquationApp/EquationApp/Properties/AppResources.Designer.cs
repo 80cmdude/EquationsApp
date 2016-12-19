@@ -350,11 +350,62 @@ namespace EquationApp.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to The distance travelled of and object is equal to the velocity of the object times the time it takes. \r\n {0} = {1} * {2}.
+        ///   Looks up a localized string similar to The current running through an element is equal to the voltage divided by the resistance.
+        ///{0} = {1} / {2}.
+        /// </summary>
+        public static string resistance_RVI_currentAnswer {
+            get {
+                return ResourceManager.GetString("resistance_RVI_currentAnswer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The resistance across an element is equal to the voltage across the element divided by the current running through it.
+        ///{0} = {1} / {2}.
+        /// </summary>
+        public static string resistance_RVI_resistanceAnswer {
+            get {
+                return ResourceManager.GetString("resistance_RVI_resistanceAnswer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The voltage across an element it equal to resistance of that element multiplied by the amount of current running through.
+        ///{0} = {1} * {2}.
+        /// </summary>
+        public static string resistance_RVI_voltageAnswer {
+            get {
+                return ResourceManager.GetString("resistance_RVI_voltageAnswer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The distance travelled of and object is equal to the velocity of the object multiplied by the time it takes.
+        /// {0} = {1} * {2}.
         /// </summary>
         public static string velocity_VDT_distanceAnswer {
             get {
                 return ResourceManager.GetString("velocity_VDT_distanceAnswer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The time taken for an object to travel a distance is equal to the distance travelled divide by the velocity. 
+        /// {0} = {1} / {2}.
+        /// </summary>
+        public static string velocity_VDT_timeAnswer {
+            get {
+                return ResourceManager.GetString("velocity_VDT_timeAnswer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The Velocity of an object is equal to the distance travelled divided by the time taken.
+        ///{0} = {1} / {2}.
+        /// </summary>
+        public static string velocity_VDT_velocityAnswer {
+            get {
+                return ResourceManager.GetString("velocity_VDT_velocityAnswer", resourceCulture);
             }
         }
     }
