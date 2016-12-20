@@ -17,5 +17,10 @@ namespace EquationApp
             InitializeComponent();
             Detail = new NavigationPage(new MainDetailPage());
         }
+
+        void NavigateHomePage(object sender, EventArgs e)
+        {
+            Detail = new NavigationPage(new MainDetailPage());
+        }
     }
 }
