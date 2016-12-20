@@ -2,11 +2,12 @@
 <MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="EquationApp.MainPage"
+             xmlns:resx="clr-namespace:EquationApp.Properties"
              Title="Paguco">
   <MasterDetailPage.Master>
     <ContentPage Title="SideMenu" BackgroundColor="#FFFCF9" >
       <StackLayout Orientation="Vertical">
-        <Label Text="paguco" HeightRequest="60" BackgroundColor="#FF4C3B" FontSize="25" TextColor="#FFF" YAlign="Center" />
+        <Label Text="{x:Static resx:AppResources.paguco}" HeightRequest="60" BackgroundColor="#FF4C3B" FontSize="25" TextColor="#FFF" YAlign="Center" />
         <Button Text="Home" Style="{StaticResource primaryNavButton}" Clicked="NavigateHomePage" />
         <Button Text="About" Style="{StaticResource primaryNavButton}" Clicked="NavigatePageAbout" />
       </StackLayout>
