@@ -129,6 +129,10 @@
     <value>Show Me How</value>
     <comment>Global_Button</comment>
   </data>
+  <data name="distance_SUAT_distanceAnswer" xml:space="preserve">
+    <value />
+    <comment>Distance_SUAT_Page</comment>
+  </data>
   <data name="emptyEquationPickerResult" xml:space="preserve">
     <value>Pick a value to calculate</value>
     <comment>Global_Label</comment>

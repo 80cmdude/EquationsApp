@@ -10,21 +10,12 @@ using Xamarin.Forms;
 
 namespace EquationApp
 {
-    public partial class MainPage : ContentPage
+    public partial class MainPage : MasterDetailPage
     {
         public MainPage()
         {
             InitializeComponent();
-        }
-        
-        async void NavigatePageElectricity(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new ElectricityPage());
-        }
-
-        async void NavigatePageMechanics(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new MechanicsPage());
+            Detail = new NavigationPage(new MainDetailPage());
         }
     }
 }

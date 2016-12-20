@@ -89,6 +89,15 @@ namespace EquationApp.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        public static string distance_SUAT_distanceAnswer {
+            get {
+                return ResourceManager.GetString("distance_SUAT_distanceAnswer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Pick a value to calculate.
         /// </summary>
         public static string emptyEquationPickerResult {
