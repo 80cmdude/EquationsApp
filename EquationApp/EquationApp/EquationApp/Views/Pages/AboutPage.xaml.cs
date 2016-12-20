@@ -20,6 +20,10 @@ namespace EquationApp
         {
             Device.OpenUri(new Uri("https://www.pagu.co/"));
         }
+         void MailToFeedback(object sender, EventArgs e)
+        {
+            Device.OpenUri(new Uri("mailto:feedback@pagu.co"));
+        }
 
         protected override bool OnBackButtonPressed()
         {

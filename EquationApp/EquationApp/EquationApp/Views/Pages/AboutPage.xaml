@@ -5,7 +5,7 @@
              xmlns:resx="clr-namespace:EquationApp.Properties">
   <StackLayout VerticalOptions="StartAndExpand" HorizontalOptions="FillAndExpand" Orientation="Vertical" Spacing="15" Padding="20,20,20,20">
     <Label Style="{StaticResource secondaryPageTitle}" Text="{x:Static resx:AppResources.lblAboutUs}" />
-    <Button Text="Feedback" Style="{StaticResource primaryNavButton}" />
+    <Button Text="Feedback" Clicked="MailToFeedback" Style="{StaticResource primaryNavButton}" />
     <Button Text="PaguCo" Clicked="NavigateToPaguCo" Style="{StaticResource primaryNavButton}" />
   </StackLayout>
 </ContentPage>
