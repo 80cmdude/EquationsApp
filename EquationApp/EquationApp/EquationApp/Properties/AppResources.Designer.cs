@@ -298,7 +298,7 @@ namespace EquationApp.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Paguco.
+        ///   Looks up a localized string similar to paguco.
         /// </summary>
         public static string paguco {
             get {

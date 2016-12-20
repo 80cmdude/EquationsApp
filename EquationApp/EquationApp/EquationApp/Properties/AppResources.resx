@@ -224,7 +224,7 @@ All feedback is welcomed via the below link (Good or Bad)</value>
     <comment>Voltage</comment>
   </data>
   <data name="paguco" xml:space="preserve">
-    <value>Paguco</value>
+    <value>paguco</value>
     <comment>Name</comment>
   </data>
   <data name="pickerEquationTitle" xml:space="preserve">

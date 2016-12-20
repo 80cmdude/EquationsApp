@@ -6,7 +6,7 @@
   <MasterDetailPage.Master>
     <ContentPage Title="SideMenu" BackgroundColor="#FFFCF9" >
       <StackLayout Orientation="Vertical">
-        <Label Text="Paguco" HeightRequest="60" BackgroundColor="#FF4C3B" />
+        <Label Text="paguco" HeightRequest="60" BackgroundColor="#FF4C3B" FontSize="25" TextColor="#FFF" YAlign="Center" />
         <Button Text="Home" Style="{StaticResource primaryNavButton}" Clicked="NavigateHomePage" />
         <Button Text="About" Style="{StaticResource primaryNavButton}" Clicked="NavigatePageAbout" />
       </StackLayout>
