@@ -22,5 +22,10 @@ namespace EquationApp
         {
             Detail = new NavigationPage(new MainDetailPage());
         }
+
+        void NavigatePageAbout(object sender, EventArgs e)
+        {
+            Detail = new NavigationPage(new AboutPage());
+        }
     }
 }
