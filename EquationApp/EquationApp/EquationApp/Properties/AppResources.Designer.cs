@@ -134,6 +134,17 @@ namespace EquationApp.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to EquationApp is a project part of PaguCo
+        ///
+        ///All feedback is welcomed via the below link (Good or Bad).
+        /// </summary>
+        public static string lblAboutUs {
+            get {
+                return ResourceManager.GetString("lblAboutUs", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to {0} m/s^2.
         /// </summary>
         public static string lblResultAcceleration {

@@ -16,6 +16,7 @@ namespace EquationApp
         {
             InitializeComponent();
             Detail = new NavigationPage(new MainDetailPage());
+            this.Title = "Paguco";
         }
 
         void NavigateHomePage(object sender, EventArgs e)

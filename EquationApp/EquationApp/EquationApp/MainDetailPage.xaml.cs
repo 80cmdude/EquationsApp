@@ -14,6 +14,7 @@ namespace EquationApp
         public MainDetailPage()
         {
             InitializeComponent();
+            this.Title = "Paguco";
         }
 
         async void NavigatePageElectricity(object sender, EventArgs e)

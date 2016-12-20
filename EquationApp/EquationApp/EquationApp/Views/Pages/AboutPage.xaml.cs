@@ -13,6 +13,17 @@ namespace EquationApp
         public AboutPage()
         {
             InitializeComponent();
+            this.Title = "Paguco";
+        }
+
+        void NavigateToPaguCo(object sender, EventArgs e)
+        {
+            Device.OpenUri(new Uri("https://www.pagu.co/"));
+        }
+
+        protected override bool OnBackButtonPressed()
+        {
+            return true;
         }
     }
 }

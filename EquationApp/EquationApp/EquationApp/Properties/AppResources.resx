@@ -149,6 +149,12 @@
     <value>Must enter a valid number into the fields</value>
     <comment>Error</comment>
   </data>
+  <data name="lblAboutUs" xml:space="preserve">
+    <value>EquationApp is a project part of PaguCo
+
+All feedback is welcomed via the below link (Good or Bad)</value>
+    <comment>About_Us_Page</comment>
+  </data>
   <data name="lblResultAcceleration" xml:space="preserve">
     <value>{0} m/s^2</value>
     <comment>Acceleration</comment>
