@@ -8,7 +8,14 @@ namespace EquationApp.Controllers.Equations
 {
     public static class Velocity_VUAT
     {
-        public static string getFinalVelocity(string initialVelocity, string acceleration, string time)
+        /// <summary>
+        /// v = u + (at)
+        /// </summary>
+        /// <param name="initialVelocity"></param>
+        /// <param name="acceleration"></param>
+        /// <param name="time"></param>
+        /// <returns></returns>
+        public static decimal getFinalVelocity(string initialVelocity, string acceleration, string time)
         {
             decimal u = Convert.ToDecimal(initialVelocity);
             decimal a = Convert.ToDecimal(acceleration);
@@ -16,10 +23,17 @@ namespace EquationApp.Controllers.Equations
 
             decimal finalVelocity = u + (a * t);
 
-            return $"{Math.Round(finalVelocity, 3)} m/s";
+            return Math.Round(finalVelocity, 3);
         }
 
-        public static string getInitialVelocity(string finalVelocity, string acceleration, string time)
+        /// <summary>
+        /// u = v - (at)
+        /// </summary>
+        /// <param name="finalVelocity"></param>
+        /// <param name="acceleration"></param>
+        /// <param name="time"></param>
+        /// <returns></returns>
+        public static decimal getInitialVelocity(string finalVelocity, string acceleration, string time)
         {
             decimal v = Convert.ToDecimal(finalVelocity);
             decimal a = Convert.ToDecimal(acceleration);
@@ -27,10 +41,17 @@ namespace EquationApp.Controllers.Equations
 
             decimal initialVelocity = v - (a * t);
 
-            return $"{Math.Round(initialVelocity, 3)} m/s";
+            return Math.Round(initialVelocity, 3);
         }
 
-        public static string getAcceleration(string finalVelocity, string initialVelocity, string time)
+        /// <summary>
+        /// a = (v - u) / t
+        /// </summary>
+        /// <param name="finalVelocity"></param>
+        /// <param name="initialVelocity"></param>
+        /// <param name="time"></param>
+        /// <returns></returns>
+        public static decimal getAcceleration(string finalVelocity, string initialVelocity, string time)
         {
             decimal v = Convert.ToDecimal(finalVelocity);
             decimal u = Convert.ToDecimal(initialVelocity);
@@ -38,10 +59,17 @@ namespace EquationApp.Controllers.Equations
 
             decimal acceleration = (v - u) / t;
 
-            return $"{Math.Round(acceleration, 3)} m/s^2";
+            return Math.Round(acceleration, 3);
         }
 
-        public static string getTime(string finalVelocity, string intialVelocity, string acceleration)
+        /// <summary>
+        /// t = (v - u) / a
+        /// </summary>
+        /// <param name="finalVelocity"></param>
+        /// <param name="intialVelocity"></param>
+        /// <param name="acceleration"></param>
+        /// <returns></returns>
+        public static decimal getTime(string finalVelocity, string intialVelocity, string acceleration)
         {
             decimal v = Convert.ToDecimal(finalVelocity);
             decimal u = Convert.ToDecimal(intialVelocity);
@@ -49,7 +77,7 @@ namespace EquationApp.Controllers.Equations
 
             decimal time = (v - u) / a;
 
-            return $"{Math.Round(time, 3)} s";
+            return Math.Round(time, 3);
         }
     }
 }

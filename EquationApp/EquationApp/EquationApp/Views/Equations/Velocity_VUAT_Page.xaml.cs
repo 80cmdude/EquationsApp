@@ -96,22 +96,22 @@ namespace EquationApp.Views.Equations
                 {
                     if (calculateTo.SelectedIndex == 0)
                     {
-                        Result.Text = Velocity_VUAT.getFinalVelocity(initialVelocityEntry.Text,accelerationEntry.Text,timeEntry.Text);
+                        Result.Text = Velocity_VUAT.getFinalVelocity(initialVelocityEntry.Text,accelerationEntry.Text,timeEntry.Text).ToString();
                         //showHow.Text = $"The distance travelled of and object is equal to the velocity of the object times the time it takes. \r\n {Result.Text} = {velocityEntry.Text} * {timeEntry.Text}";
                     }
                     else if (calculateTo.SelectedIndex == 1)
                     {
-                        Result.Text = Velocity_VUAT.getInitialVelocity(finalVelocityEntry.Text, accelerationEntry.Text, timeEntry.Text);
+                        Result.Text = Velocity_VUAT.getInitialVelocity(finalVelocityEntry.Text, accelerationEntry.Text, timeEntry.Text).ToString();
                         //showHow.Text = $"The distance travelled of and object is equal to the velocity of the object times the time it takes. \r\n {Result.Text} = {velocityEntry.Text} * {timeEntry.Text}";      }
                     }
                     else if (calculateTo.SelectedIndex == 2)
                     {
-                        Result.Text = Velocity_VUAT.getAcceleration(finalVelocityEntry.Text, initialVelocityEntry.Text, timeEntry.Text);
+                        Result.Text = Velocity_VUAT.getAcceleration(finalVelocityEntry.Text, initialVelocityEntry.Text, timeEntry.Text).ToString();
                         //showHow.Text = $"The distance travelled of and object is equal to the velocity of the object times the time it takes. \r\n {Result.Text} = {velocityEntry.Text} * {timeEntry.Text}";  }
                     }
                     else
                     {
-                        Result.Text = Velocity_VUAT.getTime(finalVelocityEntry.Text, initialVelocityEntry.Text, accelerationEntry.Text);
+                        Result.Text = Velocity_VUAT.getTime(finalVelocityEntry.Text, initialVelocityEntry.Text, accelerationEntry.Text).ToString();
                     }
                 }
             }
