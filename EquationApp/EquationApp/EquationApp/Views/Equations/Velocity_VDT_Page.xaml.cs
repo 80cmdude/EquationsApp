@@ -84,19 +84,19 @@ namespace EquationApp.Views.Equations
                 {
                     if (calculateTo.SelectedIndex == 0)
                     {
-                        decimal distance = VelocityEquation.GetDistance(velocityEntry.Text, timeEntry.Text);
+                        decimal distance = Velocity_VDT.GetDistance(velocityEntry.Text, timeEntry.Text);
                         Result.Text = string.Format(AppResources.lblResultDistance, distance);
                         showHow.Text = string.Format(AppResources.velocity_VDT_distanceAnswer, distance, velocityEntry.Text, timeEntry.Text);
                     }
                     else if (calculateTo.SelectedIndex == 1)
                     {
-                        decimal time = VelocityEquation.GetTime(velocityEntry.Text, distanceEntry.Text);
+                        decimal time = Velocity_VDT.GetTime(velocityEntry.Text, distanceEntry.Text);
                         Result.Text = string.Format(AppResources.lblResultTime, time);
                         showHow.Text = string.Format(AppResources.velocity_VDT_timeAnswer, time, distanceEntry.Text, velocityEntry.Text);
                     }
                     else
                     {
-                        decimal velocity = VelocityEquation.GetVelocity(distanceEntry.Text, timeEntry.Text);
+                        decimal velocity = Velocity_VDT.GetVelocity(distanceEntry.Text, timeEntry.Text);
                         Result.Text = string.Format(AppResources.lblResultVelocity, velocity);
                         showHow.Text = string.Format(AppResources.velocity_VDT_velocityAnswer, velocity, distanceEntry.Text, timeEntry.Text);
                     }

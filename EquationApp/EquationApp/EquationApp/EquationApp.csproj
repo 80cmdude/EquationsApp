@@ -35,6 +35,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Controllers\Equations\Mechanics\Velocity_VUAS.cs" />
+    <Compile Include="Views\Equations\Velocity_VUAS_Page.xaml.cs">
+      <DependentUpon>Velocity_VUAS_Page.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Pages\AboutPage.xaml.cs">
       <DependentUpon>AboutPage.xaml</DependentUpon>
     </Compile>
@@ -43,7 +47,7 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="Controllers\Equations\Mechanics\Distance_SUAT.cs" />
-    <Compile Include="Controllers\Equations\Mechanics\VelocityEquation.cs" />
+    <Compile Include="Controllers\Equations\Mechanics\Velocity_VDT.cs" />
     <Compile Include="Controllers\Equations\Electricity\Resistance_RVI.cs" />
     <Compile Include="Controllers\Equations\Mechanics\Velocity_VUAT.cs" />
     <Compile Include="Controllers\ModeChange.cs" />
@@ -173,6 +177,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\Pages\AboutPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\Equations\Velocity_VUAS_Page.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

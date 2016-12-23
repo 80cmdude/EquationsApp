@@ -8,6 +8,7 @@
       <Button Text="v = d/t" Clicked="NavigatePageVDT" Style="{StaticResource primaryNavButton}" />
       <Button Text="s = u+(at^2)/2" Clicked="NavigatePageSUAT" Style="{StaticResource primaryNavButton}" />
       <Button Text="v = u + at" Clicked="NavigatePageVUAT" Style="{StaticResource primaryNavButton}" />
+      <Button Text="V^2 = U^2 + 2as" Clicked="NavigatePageVUAS" Style="{StaticResource primaryNavButton}" />
     </StackLayout>
   </ContentPage.Content>
 </ContentPage>

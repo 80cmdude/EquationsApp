@@ -2,7 +2,7 @@
 
 namespace EquationApp.Controllers.Equations
 {
-    public static class VelocityEquation
+    public static class Velocity_VDT
     {
         public static decimal GetVelocity(string userDistance, string userTime)
         {
