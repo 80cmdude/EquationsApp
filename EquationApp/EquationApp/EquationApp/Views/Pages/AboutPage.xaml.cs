@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using EquationApp.Properties;
 
 using Xamarin.Forms;
 
@@ -13,16 +14,16 @@ namespace EquationApp
         public AboutPage()
         {
             InitializeComponent();
-            this.Title = "Paguco";
+            this.Title = AppResources.uchuu;
         }
 
         void NavigateToPaguCo(object sender, EventArgs e)
         {
-            Device.OpenUri(new Uri("https://www.pagu.co/"));
+            Device.OpenUri(new Uri("https://www.uchuu.io/"));
         }
          void MailToFeedback(object sender, EventArgs e)
         {
-            Device.OpenUri(new Uri("mailto:feedback@pagu.co"));
+            Device.OpenUri(new Uri("mailto:feedback@uchuu.io"));
         }
 
         protected override bool OnBackButtonPressed()

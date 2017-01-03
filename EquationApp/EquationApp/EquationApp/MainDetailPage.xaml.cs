@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using EquationApp.Properties;
 
 using Xamarin.Forms;
 
@@ -14,7 +15,7 @@ namespace EquationApp
         public MainDetailPage()
         {
             InitializeComponent();
-            this.Title = "Paguco";
+            this.Title = AppResources.uchuu;
         }
 
         async void NavigatePageElectricity(object sender, EventArgs e)

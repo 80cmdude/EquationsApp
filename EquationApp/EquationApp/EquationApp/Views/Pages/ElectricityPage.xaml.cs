@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using EquationApp.Views.Equations;
 
 using Xamarin.Forms;
+using EquationApp.Properties;
 
 namespace EquationApp.Views.Pages
 {
@@ -13,7 +14,7 @@ namespace EquationApp.Views.Pages
     {
         public ElectricityPage()
         {
-            this.Title = "Paguco";
+            this.Title = AppResources.uchuu;
             InitializeComponent();
         }
 

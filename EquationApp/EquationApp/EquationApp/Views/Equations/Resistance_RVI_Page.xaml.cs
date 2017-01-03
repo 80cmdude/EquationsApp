@@ -15,7 +15,7 @@ namespace EquationApp.Views.Equations
     {
         public Resistance_RVI_Page()
         {
-            this.Title = AppResources.paguco;
+            this.Title = AppResources.uchuu;
             InitializeComponent();
             voltageUI.IsVisible = false;
             resistanceUI.IsVisible = false;

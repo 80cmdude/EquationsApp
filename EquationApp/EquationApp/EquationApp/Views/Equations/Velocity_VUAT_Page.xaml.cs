@@ -15,7 +15,7 @@ namespace EquationApp.Views.Equations
     {
         public Velocity_VUAT_Page()
         {
-            this.Title = AppResources.paguco;
+            this.Title = AppResources.uchuu;
             InitializeComponent();
 
             finalVelocityUI.IsVisible = false;

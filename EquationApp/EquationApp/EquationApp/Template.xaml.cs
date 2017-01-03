@@ -14,7 +14,7 @@ namespace EquationApp
     {
         public Template()
         {
-            this.Title = AppResources.paguco;
+            this.Title = AppResources.uchuu;
             InitializeComponent();
 
             //Add ui elements to remove on first load

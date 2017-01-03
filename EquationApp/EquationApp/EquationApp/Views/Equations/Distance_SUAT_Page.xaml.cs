@@ -15,7 +15,7 @@ namespace EquationApp.Views.Equations
     {
         public Distance_SUAT_Page()
         {
-            this.Title = AppResources.paguco;
+            this.Title = AppResources.uchuu;
             InitializeComponent();
 
             distanceUI.IsVisible = false;

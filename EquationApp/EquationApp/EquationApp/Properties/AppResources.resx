@@ -223,10 +223,6 @@ All feedback is welcomed via the below link (Good or Bad)</value>
     <value>Voltage(V):</value>
     <comment>Voltage</comment>
   </data>
-  <data name="paguco" xml:space="preserve">
-    <value>paguco</value>
-    <comment>Name</comment>
-  </data>
   <data name="pickerEquationTitle" xml:space="preserve">
     <value>Pick a type</value>
     <comment>Global_Picker</comment>
@@ -269,6 +265,10 @@ All feedback is welcomed via the below link (Good or Bad)</value>
     <value>The voltage across an element it equal to resistance of that element multiplied by the amount of current running through.
 {0} = {1} * {2}</value>
     <comment>Resistance_RVI_Page</comment>
+  </data>
+  <data name="uchuu" xml:space="preserve">
+    <value>uchuu</value>
+    <comment>Name</comment>
   </data>
   <data name="velocity_VDT_distanceAnswer" xml:space="preserve">
     <value>The distance travelled of and object is equal to the velocity of the object multiplied by the time it takes.

@@ -17,7 +17,7 @@ namespace EquationApp
         {
             InitializeComponent();
             Detail = new NavigationPage(new MainDetailPage());
-            this.Title = AppResources.paguco;
+            this.Title = AppResources.uchuu;
         }
 
         void NavigateHomePage(object sender, EventArgs e)

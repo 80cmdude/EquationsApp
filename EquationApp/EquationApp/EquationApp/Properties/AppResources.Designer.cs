@@ -298,15 +298,6 @@ namespace EquationApp.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to paguco.
-        /// </summary>
-        public static string paguco {
-            get {
-                return ResourceManager.GetString("paguco", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Pick a type.
         /// </summary>
         public static string pickerEquationTitle {
@@ -396,6 +387,15 @@ namespace EquationApp.Properties {
         public static string resistance_RVI_voltageAnswer {
             get {
                 return ResourceManager.GetString("resistance_RVI_voltageAnswer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to uchuu.
+        /// </summary>
+        public static string uchuu {
+            get {
+                return ResourceManager.GetString("uchuu", resourceCulture);
             }
         }
         

@@ -16,7 +16,7 @@ namespace EquationApp.Views.Equations
     {
         public VelocityEquationPage()
         {
-            this.Title = AppResources.paguco;
+            this.Title = AppResources.uchuu;
             InitializeComponent();
             velocityUI.IsVisible = false;
             distanceUI.IsVisible = false;
