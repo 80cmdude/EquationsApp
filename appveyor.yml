@@ -1,8 +1,8 @@
-branches:
-  only:
-  - master
-skip_tags: true
-configuration: Release
-
+version: 1.0.1.{build}
+clone_script:
+- ps: dotnet restore
 before_build:
-  - nuget restore
+- cmd: nuget restore
+build:
+  project: EquationApp.sln
+  verbosity: minimal
