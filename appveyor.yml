@@ -1,2 +1,8 @@
+branches:
+  only:
+  - master
+skip_tags: true
+configuration: Release
+
 before_build:
   - nuget restore
