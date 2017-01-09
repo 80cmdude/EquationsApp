@@ -1,5 +1,4 @@
 [![Build status](https://ci.appveyor.com/api/projects/status/jdrooie0gtaq74sm?svg=true)](https://ci.appveyor.com/project/uchuu/equationsapp)
-
 [![Coverage Status](https://coveralls.io/repos/github/uchuuio/EquationsApp/badge.svg?branch=master)](https://coveralls.io/github/uchuuio/EquationsApp?branch=master)
 
 # EquationsApp
