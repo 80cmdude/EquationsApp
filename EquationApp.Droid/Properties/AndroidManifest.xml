@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto" android:versionCode="1001400" android:versionName="1.0.4000">
+	<uses-sdk android:minSdkVersion="15" />
+	<application android:label="EquationApp.Droid"></application>
+</manifest>
