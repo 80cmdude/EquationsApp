@@ -3,3 +3,4 @@ before_build:
 - cmd: nuget restore
 build:
   verbosity: minimal
+  project: EquationApp.sln
