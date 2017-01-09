@@ -4,7 +4,7 @@ before_build:
 build:
   verbosity: minimal
   project: EquationApp.sln
-
+configuration: Release
 environment:
   COVERALLS_REPO_TOKEN:
     secure: rvUY9DtlUmPGzPHfblvjvKuIQm5xviXDw5/0lMBGRqZTX/kUZrJFxrxq3WQOeJ3y
