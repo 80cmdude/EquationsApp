@@ -10,6 +10,6 @@ environment:
     secure: rvUY9DtlUmPGzPHfblvjvKuIQm5xviXDw5/0lMBGRqZTX/kUZrJFxrxq3WQOeJ3y
 
 after_test:
-    - packages\OpenCover.4.6.519\tools\OpenCover.Console.exe -register:user -filter:"+[*]*" -target:"packages\NUnit.ConsoleRunner.3.5.0\tools\nunit3-console.exe" -targetargs:"/domain:single EquationAppUnitTests\bin\Release\EquationAppUnitTests.dll" -output:coverage.xml
+    - packages\OpenCover.4.6.519\tools\OpenCover.Console.exe -register:user -filter:"+[*]* -[EqautionApp]EquationApp.obj*" -target:"packages\NUnit.ConsoleRunner.3.5.0\tools\nunit3-console.exe" -targetargs:"/domain:single EquationAppUnitTests\bin\Release\EquationAppUnitTests.dll" -output:coverage.xml
 
     - packages\coveralls.io.1.3.4\tools\coveralls.net.exe --opencover coverage.xml
