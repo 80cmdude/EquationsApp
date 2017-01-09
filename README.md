@@ -1,3 +1,5 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/w471y3yhr73b5iaq?svg=true)](https://ci.appveyor.com/project/uchuu/equationsapp)
+
 # EquationsApp
 
 As a scientist I want an easy way to manage my equations and speed up the solving process if possible.
