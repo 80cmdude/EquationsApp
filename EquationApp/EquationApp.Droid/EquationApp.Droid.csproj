@@ -113,6 +113,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Custom Renderers\ButtonCaseRenderer.cs" />
     <Compile Include="Custom Renderers\NegativeEntryRenderer.cs" />
     <Compile Include="Custom Renderers\UnderlineLabel.cs" />
     <Compile Include="MainActivity.cs" />

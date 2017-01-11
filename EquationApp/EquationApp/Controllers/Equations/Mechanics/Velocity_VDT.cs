@@ -9,7 +9,7 @@ namespace EquationApp.Controllers.Equations
         /// </summary>
         /// <param name="userDistance"></param>
         /// <param name="userTime"></param>
-        /// <returns></returns>
+        /// <returns>Decimal</returns>
         public static decimal GetVelocity(string userDistance, string userTime)
         {
             decimal distance = Convert.ToDecimal(userDistance);

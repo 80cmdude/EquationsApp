@@ -1,11 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:me="clr-namespace:EquationApp;assembly=EquationApp"
              x:Class="EquationApp.Views.Pages.ElectricityPage">
   <ContentPage.Content>
     <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Orientation="Vertical" Spacing="15" Padding="20,20,20,20">
       <Label Text="Electricity" VerticalOptions="Center" HorizontalOptions="Center" Style="{StaticResource primaryPageTitle}" />
-      <Button Text="R = V / I" Clicked="NavigatePageRVI" Style="{StaticResource primaryNavButton}" />
+      <me:ButtonCase Text="R = V / I" Clicked="NavigatePageRVI" Style="{StaticResource primaryNavButton}" />
     </StackLayout>
   </ContentPage.Content>
 </ContentPage>

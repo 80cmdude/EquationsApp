@@ -36,6 +36,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Controllers\Equations\Mechanics\Velocity_VUAS.cs" />
+    <Compile Include="Controls\ButtonCase.cs" />
     <Compile Include="Views\Equations\Velocity_VUAS_Page.xaml.cs">
       <DependentUpon>Velocity_VUAS_Page.xaml</DependentUpon>
     </Compile>

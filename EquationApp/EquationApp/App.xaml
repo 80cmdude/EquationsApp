@@ -32,7 +32,7 @@
         <Setter Property="BackgroundColor" Value="#0072BB" />
         <Setter Property="TextColor" Value="#FFFCF9"/>
         <Setter Property="FontSize" Value="20"/>
-        <Setter Property="BorderRadius" Value="20"/>
+        <Setter Property="BorderRadius" Value="2"/>
         <Setter Property="HeightRequest" Value="50" />
       </Style>
       <Style x:Key="equationExplanation" TargetType="Label">
